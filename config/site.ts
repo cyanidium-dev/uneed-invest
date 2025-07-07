@@ -1,69 +1,48 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: "Uneed invest | Інвестуйте в мережу подобової оренди житла",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Розрахунок",
+      href: "#estimate",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Хто ми?",
+      href: "#about-us",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Запуск",
+      href: "#launch",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Калькулятор",
+      href: "#calculator",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Наші локації",
+      href: "#locations",
+    },
+    {
+      label: "Відгуки",
+      href: "#reviews",
+    },
+    {
+      label: "FAQ",
+      href: "#faq",
     },
   ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
-  ],
+
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    linkedIn: "https://www.linkedin.com/feed/",
+    instagram: "https://www.instagram.com/",
+    telegram: "https://web.telegram.org/a/",
+    tikTok: "https://www.tiktok.com/uk-UA/",
+  },
+
+  contacts: {
+    tel: "+380-97-006-76-56",
+    email: "email@gmail.com",
   },
 };
