@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="uk">
       <head />
-      <body className="font-helvetica min-h-screen bg-background text-foreground antialiased">
+      <body className="font-helvetica text-dark bg-light min-h-screen text-[14px] antialiased">
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex h-screen flex-col">
             <Header />
-            <main className="mx-auto flex-grow">{children}</main>
+            <main className="flex-grow">{children}</main>
             <Footer />
           </div>
         </Providers>
