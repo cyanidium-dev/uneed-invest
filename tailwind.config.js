@@ -22,6 +22,11 @@ const config = {
       },
       container: {
         center: true,
+        screens: {
+          sm: "360px",
+          lg: "768px",
+          xl: "1280px",
+        },
         padding: {
           DEFAULT: "20px",
           lg: "50px",
@@ -32,6 +37,15 @@ const config = {
         dark: "#12100F",
         light: "#ffffff",
         accent: "#FF7300",
+
+        "glass-bg": "rgba(70, 70, 70, 0.26)", // #46464642
+      },
+
+      boxShadow: {
+        "inset-glass": "inset 0px 4px 12.6px 0px rgba(255, 255, 255, 0.25)",
+      },
+      backdropBlur: {
+        glass: "26px",
       },
     },
   },
