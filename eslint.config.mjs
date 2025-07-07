@@ -130,7 +130,7 @@ export default defineConfig([
           next: "return",
         },
         {
-          blankLine: "always",
+          blankLine: "any",
           prev: ["const", "let", "var"],
           next: "*",
         },
