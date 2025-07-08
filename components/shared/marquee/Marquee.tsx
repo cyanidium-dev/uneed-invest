@@ -20,7 +20,7 @@ const Marquee = ({ className = "", variant = "accent" }: IMarqueeProps) => {
       {[...Array(2)].map((_, sectionIndex) => (
         <div
           key={sectionIndex}
-          className="flex min-w-[50%] animate-[marquee_25s_linear_infinite] items-center py-3 xl:animate-[marquee_32s_linear_infinite]"
+          className="flex min-w-[50%] animate-[marquee_25s_linear_infinite] items-center xl:animate-[marquee_32s_linear_infinite]"
         >
           {logos.map((_, i) => (
             <MarqueeLogo key={i} className="mx-[7px] w-[116px]" />
