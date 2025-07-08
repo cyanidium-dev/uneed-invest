@@ -15,7 +15,7 @@ const About = () => {
             <h2 className="text-[36px] font-bold uppercase leading-none xl:text-[52px]">
               Що таке
               <span className="flex items-end gap-2 leading-none">
-                <Logo className="inline w-[171px] xl:w-[246px]" /> ?
+                <Logo className="inline w-[171px] xl:mb-[6px] xl:w-[246px]" /> ?
               </span>
             </h2>
 
