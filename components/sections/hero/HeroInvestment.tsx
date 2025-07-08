@@ -5,7 +5,7 @@ import Circles from "@/components/shared/decor/Circles";
 
 const HeroInvestment = () => {
   return (
-    <div className="mx-auto max-xl:max-w-[330px] xl:w-[471px]">
+    <div className="max-xl:mx-auto max-xl:w-full max-xl:max-w-[330px] xl:w-[471px]">
       {investmentOptions.map(({ label, variant, items, decor }) => (
         <div key={label} className="mb-7 last:mb-0">
           <div className="mb-3 flex justify-between xl:mb-5">

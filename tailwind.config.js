@@ -40,6 +40,15 @@ const config = {
 
         "glass-bg": "rgba(70, 70, 70, 0.26)", // #46464642
       },
+      animation: {
+        marquee: "marquee 12s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
 
       boxShadow: {
         "inset-glass": "inset 0px 4px 12.6px 0px rgba(255, 255, 255, 0.25)",
