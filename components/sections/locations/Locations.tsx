@@ -1,12 +1,12 @@
-import StarInfoBox from "@/components/shared/box/StarInfoBox";
-import BaseButton from "@/components/shared/buttons/BaseButton";
-
 import LocationList from "./LocationList";
 import MoreLocations from "./MoreLocations";
 
 const Locations = () => {
   return (
-    <section className="pb-[104px] pt-[46px] xl:pb-[130px] xl:pt-[117px]">
+    <section
+      id="locations"
+      className="pb-[104px] pt-[46px] xl:pb-[130px] xl:pt-[117px]"
+    >
       <div className="container max-w-[500px] xl:max-w-[1280px]">
         <h2 className="mb-7 text-[32px] font-bold uppercase leading-none xl:mb-[21px] xl:text-[52px]">
           Наші працюючи локації
