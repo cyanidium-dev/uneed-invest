@@ -10,6 +10,7 @@ interface IStarInfoBoxProps {
   boxClassName?: string;
   starVariant?: StarVariant;
   starClassName?: string;
+  textSize?: "sm" | "xl";
 }
 
 const StarInfoBox = ({
@@ -18,24 +19,30 @@ const StarInfoBox = ({
   boxClassName = "",
   starVariant = "light",
   starClassName = "",
+  textSize = "xl",
 }: IStarInfoBoxProps) => {
   return (
     <InfoBox
       variant={boxVariant}
       className={cn(
-        "flex items-center gap-4 p-4 xl:gap-5 xl:px-[18px] xl:py-6",
+        "flex items-center gap-4 p-[18px] xl:gap-5 xl:px-[18px] xl:py-6",
         boxClassName
       )}
     >
       <Star
         className={cn(
-          "rounded-full p-[2px]",
+          "size-6 shrink-0 rounded-full p-[2px] xl:size-10",
           starVariantClasses[starVariant],
           starClassName
         )}
       />
 
-      <p className="font-manrope text-[12px] font-semibold uppercase leading-none xl:text-[16px]">
+      <p
+        className={cn(
+          "font-manrope text-[12px] font-semibold uppercase leading-none",
+          textSize === "xl" ? "xl:text-[16px]" : "xl:text-[12px]"
+        )}
+      >
         {text}
       </p>
     </InfoBox>

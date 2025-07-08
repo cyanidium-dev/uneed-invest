@@ -26,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="uk">
+    <html suppressHydrationWarning lang="uk" className="scroll-smooth">
       <head />
-      <body className="font-helvetica text-dark bg-light min-h-screen text-[14px] antialiased">
+      <body className="min-h-screen bg-light font-helvetica text-[14px] text-dark antialiased">
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex h-screen flex-col">
             <Header />
