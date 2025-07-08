@@ -126,3 +126,24 @@ export const Close: FC<IconSvgProps> = ({
     />
   </svg>
 );
+
+export const Arrow: FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 40 35"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="#FF7300"
+      d="M1.059 31.457a1.5 1.5 0 1 0 1.882 2.336l-1.882-2.336ZM39.491 3.786a1.5 1.5 0 0 0-1.33-1.652L24.738.688a1.5 1.5 0 0 0-.321 2.983l11.931 1.285-1.285 11.93a1.5 1.5 0 0 0 2.983.322L39.49 3.786ZM2 32.625l.941 1.168 36-29L38 3.625l-.941-1.168-36 29L2 32.625Z"
+    />
+  </svg>
+);
