@@ -1,6 +1,6 @@
 import { investmentOptions } from "@/data/investmentOptions";
 
-import InfoBox from "@/components/shared/InfoBox";
+import InfoBox from "@/components/shared/box/InfoBox";
 import Circles from "@/components/shared/decor/Circles";
 
 const HeroInvestment = () => {
@@ -21,7 +21,7 @@ const HeroInvestment = () => {
               <li key={i}>
                 <InfoBox
                   className={
-                    "font-montserrat px-[10px] py-5 text-center text-sm font-semibold uppercase leading-[20px] text-white"
+                    "px-[10px] py-5 text-center font-montserrat text-sm font-semibold uppercase leading-[20px] text-white"
                   }
                   variant={variant}
                 >
