@@ -38,7 +38,7 @@ const config = {
         light: "#ffffff",
         accent: "#FF7300",
 
-        "glass-bg": "rgba(70, 70, 70, 0.26)", // #46464642
+        "glass-bg": "rgba(70, 70, 70, 0.26)",
       },
       animation: {
         marquee: "marquee 12s linear infinite",

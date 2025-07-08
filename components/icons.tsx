@@ -78,3 +78,51 @@ export const Star: FC<IconSvgProps> = ({
     />
   </svg>
 );
+
+export const Burger: FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      stroke="#000"
+      strokeLinecap="round"
+      strokeWidth="1.5"
+      d="M20 7H4M20 12H4M20 17H4"
+    />
+  </svg>
+);
+
+export const Close: FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="#12100F"
+      d="M7.254 18c-.319 0-.638-.117-.89-.369a1.265 1.265 0 0 1 0-1.777l9.493-9.49a1.266 1.266 0 0 1 1.778 0 1.265 1.265 0 0 1 0 1.778l-9.492 9.49c-.235.25-.57.368-.89.368Z"
+    />
+    <path
+      fill="#12100F"
+      d="M16.746 18c-.318 0-.637-.117-.889-.369l-9.492-9.49a1.265 1.265 0 0 1 0-1.776 1.266 1.266 0 0 1 1.778 0l9.492 9.489a1.265 1.265 0 0 1 0 1.777c-.251.252-.57.369-.889.369Z"
+    />
+  </svg>
+);
