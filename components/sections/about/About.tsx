@@ -3,6 +3,8 @@ import { advantagesData } from "@/data/advantages";
 import { Logo } from "@/components/icons";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 
+import AboutAdvantages from "./AboutAdvantages";
+
 const About = () => {
   return (
     <section
@@ -31,26 +33,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="xl:w-[265px]">
-          <p className="mb-[56px] font-manrope text-[14px] font-light leading-[1.22] xl:mb-[90px] xl:text-[16px]">
-            Наша компанія спеціалізується на пошуку привабливих об’єктів
-            нерухомості яка приносить стабільний дохід від оренди для наших
-            інвесторів
-          </p>
-
-          <ul className="flex flex-col gap-3">
-            {advantagesData.map(text => (
-              <li key={text}>
-                <StarInfoBox
-                  text={text}
-                  boxVariant="light"
-                  textSize="sm"
-                  boxClassName="xl:h-[87px]"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
+        <AboutAdvantages />
 
         <div className="relative h-[210px] w-full rounded-xl border-4 border-solid border-accent bg-light max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]">
           Image
