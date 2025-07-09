@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { locationData } from "@/data/locationData";
 
-import { Arrow } from "@/components/icons";
+import { ArrowIcon } from "@/components/icons";
 import InfoBox from "@/components/shared/box/InfoBox";
 
 const LocationList = () => {
@@ -19,7 +19,7 @@ const LocationList = () => {
             >
               <Image
                 src={imgUrl}
-                alt="Фото локації"
+                alt={`Фото локації за адресою ${address}`}
                 className="h-[80px] w-[102px] rounded-md xl:h-[129px] xl:w-[165px]"
               />
 
@@ -33,7 +33,7 @@ const LocationList = () => {
               </div>
 
               {isArrow && (
-                <Arrow className="absolute bottom-5 right-5 size-8 rounded-full bg-light p-[6px] xl:bottom-[44.5px] xl:right-6 xl:size-[78px] xl:p-6" />
+                <ArrowIcon className="absolute bottom-5 right-5 size-8 rounded-full bg-light p-[6px] xl:bottom-[44.5px] xl:right-6 xl:size-[78px] xl:p-6" />
               )}
             </InfoBox>
           </li>
