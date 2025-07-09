@@ -7,7 +7,9 @@ import InfoBox from "@/components/shared/box/InfoBox";
 
 const LocationList = () => {
   return (
-    <ul className="mb-[62px] flex flex-col gap-4">
+    <ul className="mb-[62px] grid gap-4 xl:grid-cols-2">
+      <li className="hidden xl:block" aria-hidden="true" />
+
       {locationData.map(
         ({ address, boxVariant, imgUrl, isArrow, place }, index) => (
           <li key={index}>
@@ -22,7 +24,7 @@ const LocationList = () => {
               />
 
               <div className="flex flex-col gap-4 xl:justify-center xl:gap-[18px]">
-                <h5 className="text-[18px] font-bold uppercase leading-none xl:text-[24px]">
+                <h5 className="text-[18px] font-bold uppercase leading-none xl:w-[210px] xl:text-[24px]">
                   {place}
                 </h5>
                 <p className="w-[130px] font-manrope text-[12px] font-light leading-none xl:w-[204px] xl:text-[16px]">

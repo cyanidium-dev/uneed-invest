@@ -29,7 +29,7 @@ const config = {
         },
         padding: {
           DEFAULT: "20px",
-          lg: "50px",
+          // lg: "50px",
           xl: "80px",
         },
       },
