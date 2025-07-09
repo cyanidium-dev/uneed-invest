@@ -58,7 +58,7 @@ export const MarqueeLogo: FC<IconSvgProps> = ({
   </svg>
 );
 
-export const Star: FC<IconSvgProps> = ({
+export const StarIcon: FC<IconSvgProps> = ({
   size = 36,
   width,
   height,
@@ -79,7 +79,7 @@ export const Star: FC<IconSvgProps> = ({
   </svg>
 );
 
-export const Burger: FC<IconSvgProps> = ({
+export const BurgerIcon: FC<IconSvgProps> = ({
   size = 36,
   width,
   height,
@@ -102,7 +102,7 @@ export const Burger: FC<IconSvgProps> = ({
   </svg>
 );
 
-export const Close: FC<IconSvgProps> = ({
+export const CloseIcon: FC<IconSvgProps> = ({
   size = 36,
   width,
   height,
@@ -127,7 +127,7 @@ export const Close: FC<IconSvgProps> = ({
   </svg>
 );
 
-export const Arrow: FC<IconSvgProps> = ({
+export const ArrowIcon: FC<IconSvgProps> = ({
   size = 36,
   width,
   height,

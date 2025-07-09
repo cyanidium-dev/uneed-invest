@@ -1,4 +1,4 @@
-import { Close } from "@/components/icons";
+import { CloseIcon } from "@/components/icons";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 import { cn } from "@/utils/cn";
 import { siteConfig } from "@/config/site";
@@ -29,7 +29,7 @@ const NavMenu = ({ isOpen, closeMenu }: NavMenuProps) => {
             className="h-6 min-w-6 rounded-none p-0 xl:hidden"
             onClick={closeMenu}
           >
-            <Close />
+            <CloseIcon />
           </BaseButton>
         </div>
 

@@ -1,4 +1,4 @@
-import { Star as StarIcon } from "@/components/icons";
+import { StarIcon } from "@/components/icons";
 import { cn } from "@/utils/cn";
 
 import { StarVariant, starVariantClasses } from "./starVariants";

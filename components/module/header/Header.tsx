@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { Burger, Logo } from "@/components/icons";
+import { BurgerIcon, Logo } from "@/components/icons";
 import Backdrop from "@/components/shared/backdrop/Backdrop";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 
@@ -26,7 +26,7 @@ const Header = () => {
           className="h-6 min-w-6 rounded-none p-0 xl:hidden"
           onClick={openMenu}
         >
-          <Burger />
+          <BurgerIcon />
         </BaseButton>
 
         <Backdrop onClick={closeMenu} isVisible={isNavMenuOpened} />
