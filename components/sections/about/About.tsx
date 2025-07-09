@@ -1,5 +1,3 @@
-import { advantagesData } from "@/data/advantages";
-
 import { Logo } from "@/components/icons";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 
