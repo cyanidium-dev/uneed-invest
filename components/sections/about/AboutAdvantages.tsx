@@ -1,4 +1,4 @@
-import { advantagesData } from "@/data/advantages";
+import { aboutData } from "@/data/aboutData";
 
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 
@@ -11,7 +11,7 @@ const AboutAdvantages = () => {
       </p>
 
       <ul className="flex flex-col gap-3">
-        {advantagesData.map(text => (
+        {aboutData.map(text => (
           <li key={text}>
             <StarInfoBox
               text={text}
