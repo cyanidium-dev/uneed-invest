@@ -1,3 +1,5 @@
+import { occupancyData } from "@/data/occupancyData";
+
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
@@ -5,6 +7,8 @@ import { cn } from "@/utils/cn";
 import { baseBox, baseHeading, baseText } from "./occupancyConfig";
 
 const OccupancyListDesk = () => {
+  const { chatbot, google, marketing, publicity, reviews } = occupancyData;
+
   return (
     <ul className="flex flex-col max-xl:hidden xl:gap-5">
       <li>
@@ -15,10 +19,8 @@ const OccupancyListDesk = () => {
             "justify-start bg-contain bg-no-repeat xl:absolute xl:right-20 xl:top-0 xl:h-[272px] xl:w-[455px] xl:p-9"
           )}
         >
-          <h4 className={cn(baseHeading, "")}>Маркетингові Воронки</h4>
-          <p className={cn(baseText, "")}>
-            автоматизовані ланцюжки дотиків від першого інтересу до бронювання
-          </p>
+          <h4 className={baseHeading}>{marketing.title}</h4>
+          <p className={baseText}>{marketing.description}</p>
 
           <div className="absolute bottom-0 left-1/2 w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat xl:h-[106px]" />
         </InfoBox>
@@ -29,10 +31,8 @@ const OccupancyListDesk = () => {
           variant="dark"
           className={cn(baseBox, "xl:h-[219px] xl:w-[360px]")}
         >
-          <h4 className={cn(baseHeading, "w-[127px]")}>Платна реклама</h4>
-          <p className={cn(baseText, "w-[180px]")}>
-            професійний націлення в соцмережах, Google Ads та ремаркетинг
-          </p>
+          <h4 className={cn(baseHeading, "w-[127px]")}>{publicity.title}</h4>
+          <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
           <div className="absolute right-0 top-0 h-[128px] w-[155px] bg-[url('/images/occupancy/occupancy-2-decor-top.webp')] bg-cover bg-no-repeat" />
           <div className="absolute bottom-0 right-0 h-[90px] w-[199px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />
         </InfoBox>
@@ -44,10 +44,8 @@ const OccupancyListDesk = () => {
           className={cn(baseBox, "xl:h-[219px] xl:w-[455px]")}
         >
           <div className="ml-auto w-[160px] text-right">
-            <h4 className={cn(baseHeading, "")}>просування в Google-картах</h4>
-            <p className={cn(baseText, "")}>
-              керуємо картками локацій, працюємо з гео-запитами
-            </p>
+            <h4 className={baseHeading}>{google.title}</h4>
+            <p className={baseText}>{google.description}</p>
           </div>
 
           <Star
@@ -64,20 +62,16 @@ const OccupancyListDesk = () => {
           variant="glass"
           className={cn(baseBox, "text-center xl:h-[219px] xl:w-[265px]")}
         >
-          <h4 className={cn(baseHeading, "")}>Робота з відгуками</h4>
-          <p className={cn(baseText, "")}>
-            активна модерація та підвищення рейтингів на Booking, Airbnb, Google
-          </p>
+          <h4 className={baseHeading}>{reviews.title}</h4>
+          <p className={baseText}>{reviews.description}</p>
         </InfoBox>
 
         <InfoBox
           variant="dark"
           className={cn(baseBox, "text-center xl:h-[219px] xl:w-[265px]")}
         >
-          <h4 className={cn(baseHeading, "")}>Чат-боти для гостей</h4>
-          <p className={cn(baseText, "")}>
-            автоматичне підтвердження броні, відповіді на запитання, upsell
-          </p>
+          <h4 className={baseHeading}>{chatbot.title}</h4>
+          <p className={baseText}>{chatbot.description}</p>
         </InfoBox>
       </li>
     </ul>
