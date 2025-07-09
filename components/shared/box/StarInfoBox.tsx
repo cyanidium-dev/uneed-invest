@@ -1,8 +1,9 @@
-import { Star } from "@/components/icons";
 import { cn } from "@/utils/cn";
 
+import Star from "../decor/Star";
+import { StarVariant } from "../decor/starVariants";
 import InfoBox from "./InfoBox";
-import { BoxVariant, StarVariant, starVariantClasses } from "./boxVariants";
+import { BoxVariant } from "./boxVariants";
 
 interface IStarInfoBoxProps {
   text: string;
@@ -29,13 +30,7 @@ const StarInfoBox = ({
         boxClassName
       )}
     >
-      <Star
-        className={cn(
-          "size-6 shrink-0 rounded-full p-[2px] xl:size-10",
-          starVariantClasses[starVariant],
-          starClassName
-        )}
-      />
+      <Star starVariant={starVariant} starClassName={starClassName} />
 
       <p
         className={cn(
