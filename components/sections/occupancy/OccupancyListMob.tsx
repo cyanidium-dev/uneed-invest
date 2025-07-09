@@ -2,14 +2,9 @@ import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
 
-const OccupancyListMob = () => {
-  const baseBox =
-    "relative overflow-hidden flex h-[184px] flex-col justify-center px-6";
-  const baseHeading =
-    "mb-[18px] text-[18px] font-bold uppercase leading-none xl:text-[24px]";
-  const baseText =
-    "font-manrope text-[12px] font-light leading-none xl:text-[16px]";
+import { baseBox, baseHeading, baseText } from "./occupancyConfig";
 
+const OccupancyListMob = () => {
   return (
     <ul className="flex flex-col gap-4 xl:hidden">
       <li>
@@ -25,7 +20,7 @@ const OccupancyListMob = () => {
             автоматизовані ланцюжки дотиків від першого інтересу до бронювання
           </p>
 
-          <div className="absolute bottom-0 left-1/2 h-[73px] w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat max-sm:h-[65px] xl:h-[106px]" />
+          <div className="absolute bottom-0 left-1/2 h-[73px] w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat max-sm:h-[65px]" />
         </InfoBox>
       </li>
 
