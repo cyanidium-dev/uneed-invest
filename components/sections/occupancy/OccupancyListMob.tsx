@@ -13,7 +13,7 @@ const OccupancyListMob = () => {
     <ul className="flex flex-col gap-4 xl:hidden">
       <li>
         <InfoBox
-          variant="glass"
+          variant="glass-dark"
           className={cn(
             baseBox,
             "justify-start bg-contain bg-no-repeat max-xl:pt-6"
@@ -36,7 +36,7 @@ const OccupancyListMob = () => {
       </li>
 
       <li className="flex gap-4">
-        <InfoBox variant="glass" className={cn(baseBox, "text-center")}>
+        <InfoBox variant="glass-dark" className={cn(baseBox, "text-center")}>
           <h4 className={baseHeading}>{reviews.title}</h4>
           <p className={baseText}>{reviews.description}</p>
         </InfoBox>

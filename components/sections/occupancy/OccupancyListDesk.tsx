@@ -13,7 +13,7 @@ const OccupancyListDesk = () => {
     <ul className="flex flex-col max-xl:hidden xl:gap-5">
       <li>
         <InfoBox
-          variant="glass"
+          variant="glass-dark"
           className={cn(
             baseBox,
             "justify-start bg-contain bg-no-repeat xl:absolute xl:right-20 xl:top-0 xl:h-[272px] xl:w-[455px] xl:p-9"
@@ -59,7 +59,7 @@ const OccupancyListDesk = () => {
         <div className="h-[219px] w-[550px] shrink-0 rounded-xl bg-[url('/images/occupancy/occupancy-5-desk.webp')] bg-cover bg-no-repeat" />
 
         <InfoBox
-          variant="glass"
+          variant="glass-dark"
           className={cn(baseBox, "text-center xl:h-[219px] xl:w-[265px]")}
         >
           <h4 className={baseHeading}>{reviews.title}</h4>

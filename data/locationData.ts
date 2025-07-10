@@ -42,14 +42,14 @@ export const locationData: LocationItem[] = [
     place: "Uneed office",
     address: "В найближчому майбутньому",
     imgUrl: loc4,
-    boxVariant: "glass",
+    boxVariant: "glass-dark",
     isArrow: true,
   },
   {
     place: "Uneed House",
     address: "В найближчому майбутньому",
     imgUrl: loc5,
-    boxVariant: "glass",
+    boxVariant: "glass-dark",
     isArrow: true,
   },
 ];
