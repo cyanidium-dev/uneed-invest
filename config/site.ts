@@ -1,3 +1,5 @@
+import { ROUTES } from "./routes";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -5,32 +7,32 @@ export const siteConfig = {
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Розрахунок",
-      href: "#estimate",
+      label: ROUTES.ESTIMATE.label,
+      href: ROUTES.ESTIMATE.href,
     },
     {
-      label: "Хто ми?",
-      href: "#about-us",
+      label: ROUTES.ABOUT.label,
+      href: ROUTES.ABOUT.href,
     },
     {
-      label: "Запуск",
-      href: "#launch",
+      label: ROUTES.LAUNCH.label,
+      href: ROUTES.LAUNCH.href,
     },
     {
-      label: "Калькулятор",
-      href: "#calculator",
+      label: ROUTES.CALCULATOR.label,
+      href: ROUTES.CALCULATOR.href,
     },
     {
-      label: "Наші локації",
-      href: "#locations",
+      label: ROUTES.LOCATIONS.label,
+      href: ROUTES.LOCATIONS.href,
     },
     {
-      label: "Відгуки",
-      href: "#reviews",
+      label: ROUTES.REVIEWS.label,
+      href: ROUTES.REVIEWS.href,
     },
     {
-      label: "FAQ",
-      href: "#faq",
+      label: ROUTES.FAQ.label,
+      href: ROUTES.FAQ.href,
     },
   ],
 

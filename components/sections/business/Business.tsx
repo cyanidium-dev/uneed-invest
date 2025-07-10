@@ -6,10 +6,7 @@ import BusinessStats from "./BusinessStats";
 
 const Business = () => {
   return (
-    <section
-      id="business"
-      className="relative h-[973px] overflow-hidden pb-[106px] pt-[65px] xl:h-[904px]"
-    >
+    <section className="relative h-[973px] overflow-hidden pb-[106px] pt-[65px] xl:h-[904px] xl:pt-[98px]">
       <div className="container relative flex h-full max-w-[400px] flex-col xl:max-w-[1280px] xl:flex-row xl:justify-between">
         <h2 className="text-[24px] font-bold uppercase leading-none max-xl:mb-6 max-xl:max-w-[320px] xl:w-[390px] xl:shrink-0 xl:text-[50px]">
           Ми будуємо більше,

@@ -1,10 +1,12 @@
+import { ROUTES } from "@/config/routes";
+
 import LocationList from "./LocationList";
 import MoreLocations from "./MoreLocations";
 
 const Locations = () => {
   return (
     <section
-      id="locations"
+      id={ROUTES.LOCATIONS.id}
       className="pb-[104px] pt-[46px] xl:pb-[130px] xl:pt-[206px]"
     >
       <div className="container relative max-w-[500px] xl:max-w-[1280px]">

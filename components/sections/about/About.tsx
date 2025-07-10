@@ -1,12 +1,13 @@
 import { Logo } from "@/components/icons";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
+import { ROUTES } from "@/config/routes";
 
 import AboutAdvantages from "./AboutAdvantages";
 
 const About = () => {
   return (
     <section
-      id="about-us"
+      id={ROUTES.ABOUT.id}
       className="overflow-hidden bg-dark pb-[60px] pt-10 text-light xl:pb-[68px] xl:pt-[95px]"
     >
       <div className="container relative flex max-w-[400px] flex-col gap-6 xl:max-w-[1280px] xl:flex-row-reverse">
