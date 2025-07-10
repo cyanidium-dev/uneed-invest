@@ -6,6 +6,7 @@ import Estimate from "@/components/sections/estimate/Estimate";
 import Hero from "@/components/sections/hero/Hero";
 import Locations from "@/components/sections/locations/Locations";
 import Occupancy from "@/components/sections/occupancy/Occupancy";
+import Token from "@/components/sections/token/Token";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
 
       <Calculator />
       <Business />
+
+      <Token />
     </>
   );
 }

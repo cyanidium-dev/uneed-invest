@@ -58,6 +58,27 @@ export const MarqueeLogo: FC<IconSvgProps> = ({
   </svg>
 );
 
+export const ShortLogo: FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 19 24"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="#FF7300"
+      d="M0 16.515V6.005a1.501 1.501 0 0 1 3.003 0v10.51c0 .66.255 1.636 1.061 2.442.783.783 2.243 1.562 4.945 1.562 5.302 0 6.506-3.118 6.506-4.004V6.005a1.501 1.501 0 0 1 3.003 0v10.51c0 2.785-2.8 7.007-9.51 7.007-3.303 0-5.597-.972-7.067-2.442C.496 19.635 0 17.858 0 16.515ZM3.003 1.501a1.501 1.501 0 1 1-3.003 0 1.501 1.501 0 0 1 3.003 0ZM18.518 1.501a1.501 1.501 0 1 1-3.003 0 1.501 1.501 0 0 1 3.003 0Z"
+    />
+  </svg>
+);
+
 export const StarIcon: FC<IconSvgProps> = ({
   size = 36,
   width,
