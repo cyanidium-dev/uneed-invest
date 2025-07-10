@@ -4,6 +4,7 @@ import Business from "@/components/sections/business/Business";
 import Calculator from "@/components/sections/calculator/Calculator";
 import Estimate from "@/components/sections/estimate/Estimate";
 import Hero from "@/components/sections/hero/Hero";
+import Investment from "@/components/sections/investment/Investment";
 import Locations from "@/components/sections/locations/Locations";
 import Occupancy from "@/components/sections/occupancy/Occupancy";
 import Token from "@/components/sections/token/Token";
@@ -23,6 +24,7 @@ export default function Home() {
       <Business />
 
       <Token />
+      <Investment />
     </>
   );
 }
