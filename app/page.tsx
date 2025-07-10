@@ -1,5 +1,6 @@
 import About from "@/components/sections/about/About";
 import Advantages from "@/components/sections/advantages/Advantages";
+import Business from "@/components/sections/business/Business";
 import Estimate from "@/components/sections/estimate/Estimate";
 import Hero from "@/components/sections/hero/Hero";
 import Locations from "@/components/sections/locations/Locations";
@@ -15,6 +16,8 @@ export default function Home() {
       <Occupancy />
 
       <Advantages />
+
+      <Business />
     </>
   );
 }

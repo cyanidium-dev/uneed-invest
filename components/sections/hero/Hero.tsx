@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gray-300 pb-[100px] pt-[242px] xl:pt-[189px]">
       <div className="container flex max-w-[1280px] flex-col xl:flex-row xl:justify-between">
-        <div className="mb-[177px] max-w-[457px] max-xl:mx-auto">
+        <div className="max-w-[457px] max-xl:mx-auto max-xl:mb-[177px]">
           <StarInfoBox
             boxVariant="light"
             text="Твоя частка в майбутньому"

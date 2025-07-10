@@ -23,7 +23,10 @@ const Marquee = ({ className = "", variant = "accent" }: IMarqueeProps) => {
           className="flex min-w-[50%] animate-[marquee_25s_linear_infinite] items-center xl:animate-[marquee_32s_linear_infinite]"
         >
           {logos.map((_, i) => (
-            <MarqueeLogo key={i} className="mx-[7px] w-[116px] xl:w-[146px]" />
+            <MarqueeLogo
+              key={i}
+              className={cn("mx-[7px] w-[116px] xl:w-[146px]")}
+            />
           ))}
         </div>
       ))}
