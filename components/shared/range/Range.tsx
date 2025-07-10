@@ -22,9 +22,9 @@ const Range = ({ item, value, onChange }: IRangeProps) => {
         endContent:
           "absolute bottom-[-32px] right-0 font-bold text-[18px] leading-none uppercase ",
       }}
-      //   className="max-w-md"
       defaultValue={defaultValue}
       label={label}
+      // aria-label={label}
       maxValue={maxValue}
       minValue={minValue}
       step={step}
