@@ -1,7 +1,6 @@
-import { investmentOptions } from "@/data/investmentOptions";
-
 import InfoBox from "@/components/shared/box/InfoBox";
 import Circles from "@/components/shared/decor/Circles";
+import { investmentOptions } from "@/data/investmentOptions";
 
 const HeroInvestment = () => {
   return (

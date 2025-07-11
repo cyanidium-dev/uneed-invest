@@ -1,8 +1,7 @@
-import { occupancyData } from "@/data/occupancyData";
-
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
+import { occupancyData } from "@/data/occupancyData";
 
 import { baseBox, baseHeading, baseText } from "./occupancyConfig";
 

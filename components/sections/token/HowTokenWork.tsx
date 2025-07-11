@@ -1,6 +1,5 @@
-import { howTokenWork } from "@/data/tokenData";
-
 import MarkedList from "@/components/shared/list/MarkedList";
+import { howTokenWork } from "@/data/tokenData";
 
 const HowTokenWork = () => {
   return (

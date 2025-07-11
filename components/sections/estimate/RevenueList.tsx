@@ -1,7 +1,6 @@
-import { revenueData } from "@/data/revenueData";
-
 import InfoBox from "@/components/shared/box/InfoBox";
 import Circles from "@/components/shared/decor/Circles";
+import { revenueData } from "@/data/revenueData";
 
 const RevenueList = () => {
   return (

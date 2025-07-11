@@ -18,11 +18,11 @@ const Circles = ({ color = "bg-accent", directionToSmall }: ICirclesProps) => {
     <div className={wrapperStyles}>
       <div className={cn("size-6 rounded-full xl:size-12", color)} />
       <div
-        className={cn("bg-accent size-3 rounded-full xl:size-[25px]", color)}
+        className={cn("size-3 rounded-full bg-accent xl:size-[25px]", color)}
       />
       <div
         className={cn(
-          "bg-accent size-[6px] rounded-full xl:size-[13px]",
+          "size-[6px] rounded-full bg-accent xl:size-[13px]",
           color
         )}
       />

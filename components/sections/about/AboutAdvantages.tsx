@@ -1,6 +1,5 @@
-import { aboutData } from "@/data/aboutData";
-
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
+import { aboutData } from "@/data/aboutData";
 
 const AboutAdvantages = () => {
   return (

@@ -1,9 +1,9 @@
 "use client";
 
 import { Accordion, AccordionItem } from "@heroui/accordion";
-import { faqData } from "@/data/faqData";
 
 import { AccordionArrowIcon } from "@/components/icons";
+import { faqData } from "@/data/faqData";
 
 const FaqList = () => {
   return (

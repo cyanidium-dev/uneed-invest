@@ -1,9 +1,8 @@
 import Image from "next/image";
 
-import { locationData } from "@/data/locationData";
-
 import { ArrowIcon } from "@/components/icons";
 import InfoBox from "@/components/shared/box/InfoBox";
+import { locationData } from "@/data/locationData";
 
 const LocationList = () => {
   return (

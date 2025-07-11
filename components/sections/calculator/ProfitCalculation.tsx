@@ -3,14 +3,14 @@
 import { useState } from "react";
 
 import { Select, SelectItem } from "@heroui/select";
+
+import InfoBox from "@/components/shared/box/InfoBox";
+import Range from "@/components/shared/range/Range";
 import {
   SliderValues,
   calculationData,
   calculationVariants,
 } from "@/data/calculationData";
-
-import InfoBox from "@/components/shared/box/InfoBox";
-import Range from "@/components/shared/range/Range";
 
 const ProfitCalculation = () => {
   const [state, setState] = useState({

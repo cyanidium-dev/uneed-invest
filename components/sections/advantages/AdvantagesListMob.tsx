@@ -1,6 +1,5 @@
-import { advantagesData } from "@/data/advantagesData";
-
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
+import { advantagesData } from "@/data/advantagesData";
 
 const AdvantagesListMob = () => {
   return (

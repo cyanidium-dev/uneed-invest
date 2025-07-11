@@ -1,7 +1,6 @@
-import { tokenICOData } from "@/data/tokenData";
-
 import InfoBox from "@/components/shared/box/InfoBox";
 import MarkedList from "@/components/shared/list/MarkedList";
+import { tokenICOData } from "@/data/tokenData";
 
 const TokenICO = () => {
   return (
