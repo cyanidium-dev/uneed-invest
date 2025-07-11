@@ -37,6 +37,7 @@ const config = {
         dark: "#12100F",
         light: "#ffffff",
         accent: "#FF7300",
+        "accent-light": "#FF9D4C",
 
         "glass-bg": "rgba(70, 70, 70, 0.26)",
       },

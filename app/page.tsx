@@ -3,6 +3,7 @@ import Advantages from "@/components/sections/advantages/Advantages";
 import Business from "@/components/sections/business/Business";
 import Calculator from "@/components/sections/calculator/Calculator";
 import Estimate from "@/components/sections/estimate/Estimate";
+import FAQ from "@/components/sections/faq/FAQ";
 import Hero from "@/components/sections/hero/Hero";
 import Investment from "@/components/sections/investment/Investment";
 import Locations from "@/components/sections/locations/Locations";
@@ -27,6 +28,7 @@ export default function Home() {
       <Token />
       <Investment />
       <Reviews />
+      <FAQ />
     </>
   );
 }

@@ -168,3 +168,28 @@ export const ArrowIcon: FC<IconSvgProps> = ({
     />
   </svg>
 );
+
+export const AccordionArrowIcon: FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 25 24"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      stroke="#081B52"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="1.5"
+      d="m4.457 9 6.52 6.52c.77.77 2.03.77 2.8 0L20.297 9"
+    />
+  </svg>
+);
