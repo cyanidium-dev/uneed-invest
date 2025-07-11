@@ -44,7 +44,7 @@ const Investment = () => {
           starVariant="accent-light"
         />
 
-        <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-xl border-4 border-solid border-accent bg-light max-xl:bottom-0 xl:right-[435px] xl:top-[0] xl:h-[342px] xl:w-[275px]">
+        <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-xl border-4 border-solid border-accent bg-light max-xl:bottom-0 xl:right-[435px] xl:top-[0]">
           Image
         </div>
       </div>

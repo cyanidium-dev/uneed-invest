@@ -1,6 +1,8 @@
+import { BoxVariant } from "@/components/shared/box/boxVariants";
+
 type investmentItem = {
   label: string;
-  variant: "accent" | "dark" | "light" | "glass";
+  variant: BoxVariant;
   items: {
     label: string;
     value: string;
