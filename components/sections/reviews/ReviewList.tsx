@@ -14,9 +14,9 @@ const ReviewList = () => {
           <Image
             src={imgSrc}
             alt={name}
-            className="-z-10 h-full w-full rounded-xl"
-            objectFit="cover"
+            className="-z-10 size-full rounded-xl object-cover"
             fill
+            sizes="(max-width: 1280px) 200px, 265px"
           />
 
           <div
