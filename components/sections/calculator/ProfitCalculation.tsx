@@ -39,6 +39,7 @@ const ProfitCalculation = () => {
           variant="bordered"
           radius="sm"
           size="lg"
+          aria-label="Обрати тип локації"
           // defaultSelectedKeys={calculationVariants[0].key}
           defaultSelectedKeys={new Set([calculationVariants[0].key])}
           classNames={{

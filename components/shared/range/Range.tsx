@@ -24,7 +24,7 @@ const Range = ({ item, value, onChange }: IRangeProps) => {
       }}
       defaultValue={defaultValue}
       label={label}
-      // aria-label={label}
+      aria-label={label}
       maxValue={maxValue}
       minValue={minValue}
       step={step}
