@@ -3,15 +3,21 @@ import { cn } from "@/utils/cn";
 interface ICirclesProps {
   color?: "bg-accent" | "bg-light";
   directionToSmall?: "right" | "left" | "down" | "up";
+  className?: string;
 }
 
-const Circles = ({ color = "bg-accent", directionToSmall }: ICirclesProps) => {
+const Circles = ({
+  color = "bg-accent",
+  directionToSmall = "right",
+  className,
+}: ICirclesProps) => {
   const wrapperStyles = cn(
     "flex items-center justify-center gap-[15px]",
     directionToSmall === "down" && "flex-col",
-    directionToSmall === "left" && "flex-row",
-    directionToSmall === "right" && "flex-row-reverse",
-    directionToSmall === "up" && "flex-co-reverse"
+    directionToSmall === "left" && "flex-row-reverse",
+    directionToSmall === "right" && "flex-row",
+    directionToSmall === "up" && "flex-co-reverse",
+    className
   );
 
   return (

@@ -15,8 +15,8 @@ export const siteConfig = {
       href: ROUTES.ABOUT.href,
     },
     {
-      label: ROUTES.LAUNCH.label,
-      href: ROUTES.LAUNCH.href,
+      label: ROUTES.PARTNERSHIP.label,
+      href: ROUTES.PARTNERSHIP.href,
     },
     {
       label: ROUTES.CALCULATOR.label,

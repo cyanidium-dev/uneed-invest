@@ -9,10 +9,10 @@ export const ROUTES = {
     href: "#about-us",
     id: "about-us",
   },
-  LAUNCH: {
+  PARTNERSHIP: {
     label: "Запуск",
-    href: "#launch",
-    id: "launch",
+    href: "#partnership",
+    id: "partnership",
   },
   CALCULATOR: {
     label: "Калькулятор",

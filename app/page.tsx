@@ -8,6 +8,7 @@ import Hero from "@/components/sections/hero/Hero";
 import Investment from "@/components/sections/investment/Investment";
 import Locations from "@/components/sections/locations/Locations";
 import Occupancy from "@/components/sections/occupancy/Occupancy";
+import Partnership from "@/components/sections/partnership/Partnership";
 import Reviews from "@/components/sections/reviews/Reviews";
 import Token from "@/components/sections/token/Token";
 
@@ -21,7 +22,7 @@ export default function Home() {
       <Occupancy />
 
       <Advantages />
-
+      <Partnership />
       <Calculator />
       <Business />
 
