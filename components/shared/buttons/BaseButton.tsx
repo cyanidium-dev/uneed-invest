@@ -16,6 +16,8 @@ interface IBaseButtonProps {
   target?: "_blank" | "_self";
   rel?: string;
   ariaLabel?: string;
+  isDisable?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 const isExternalLink = (href?: string) => {
@@ -35,6 +37,8 @@ const BaseButton = ({
   target,
   rel,
   ariaLabel,
+  isDisable,
+  type = "button",
   ...rest
 }: IBaseButtonProps) => {
   const isExternal = isExternalLink(href);
@@ -62,6 +66,8 @@ const BaseButton = ({
       rel={isExternal ? "noopener noreferrer" : rel}
       className={buttonStyles}
       aria-label={ariaLabel}
+      disabled={isDisable}
+      type={type}
       {...rest}
     >
       {children}

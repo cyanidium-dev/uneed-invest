@@ -26,6 +26,8 @@
     "^@/utils(.*)$",
     "^@/types(.*)$",
     "^@/helpers(.*)$",
+    "^@/services(.*)$",
+    "^@/schemas(.*)$",
     "^@/config(.*)$",
     "^@/data(.*)$",
     "^@/images(.*)$",
