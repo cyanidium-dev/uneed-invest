@@ -7,8 +7,8 @@ import HeroInvestment from "./HeroInvestment";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gray-300 pb-[100px] pt-[242px] xl:pt-[189px]">
-      <div className="container flex max-w-[1280px] flex-col xl:flex-row xl:justify-between">
+    <section className="relative overflow-hidden pb-[100px] pt-[242px] xl:pt-[189px]">
+      <div className="container relative z-10 flex max-w-[1280px] flex-col xl:flex-row xl:justify-between">
         <div className="max-w-[457px] max-xl:mx-auto max-xl:mb-[177px]">
           <StarInfoBox
             boxVariant="light"
@@ -35,13 +35,15 @@ const Hero = () => {
 
         <Marquee
           className={cn(
-            "absolute max-xl:left-0 max-xl:top-[656px]",
+            "absolute max-xl:left-0 max-xl:top-[416px]",
             "xl:bottom-0 xl:left-0 xl:-rotate-90"
           )}
         />
 
         <HeroInvestment />
       </div>
+
+      <div className="absolute left-0 top-0 h-full w-full bg-[url('/images/hero/hero-bg-mob.webp')] bg-cover bg-no-repeat xl:w-1/2 xl:bg-[url('/images/hero/hero-bg-desk.webp')]" />
     </section>
   );
 };
