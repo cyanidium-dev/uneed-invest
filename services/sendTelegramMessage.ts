@@ -1,6 +1,7 @@
 export interface TelegramFormData {
   name: string;
   phone: string;
+  message?: string;
 }
 
 const sendTelegramMessage = async (

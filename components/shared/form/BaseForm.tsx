@@ -5,20 +5,25 @@ import { FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import sendTelegramMessage from "@/services/sendTelegramMessage";
-import useFeedbackFormSchema, {
-  FeedbackFormSchema,
-} from "@/schemas/FeedbackFormSchema";
+import useFullFeedbackFormSchema, {
+  FullFeedbackFormSchema,
+} from "@/schemas/FullFeedbackFormSchema";
 
 import BaseButton from "../buttons/BaseButton";
 import Loader from "../loader/Loader";
 import FormField from "./FormField";
+import TextareaField from "./TextareaField";
 
-const BaseForm = () => {
-  const validationSchema = useFeedbackFormSchema();
+interface IBaseFormProps {
+  isFullForm?: boolean;
+}
 
-  const methods = useForm<FeedbackFormSchema>({
+const BaseForm = ({ isFullForm = false }: IBaseFormProps) => {
+  const validationSchema = useFullFeedbackFormSchema();
+
+  const methods = useForm<FullFeedbackFormSchema>({
     resolver: zodResolver(validationSchema),
-    defaultValues: { name: "", phone: "" },
+    defaultValues: { name: "", phone: "", message: "" },
   });
 
   const {
@@ -27,7 +32,7 @@ const BaseForm = () => {
     formState: { isSubmitting },
   } = methods;
 
-  const onSubmit = async (data: FeedbackFormSchema) => {
+  const onSubmit = async (data: FullFeedbackFormSchema) => {
     const success = await sendTelegramMessage(data);
 
     if (success) {
@@ -46,6 +51,14 @@ const BaseForm = () => {
         <FormField name="name" type="text" label="Ім’я та прізвище" />
 
         <FormField name="phone" type="tel" label="Номер телефону" />
+
+        {isFullForm && (
+          <TextareaField
+            name="message"
+            type="text"
+            label="Яку суму бажаєте інвестувати?"
+          />
+        )}
 
         <BaseButton
           variant="light"

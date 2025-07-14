@@ -5,13 +5,14 @@ import { z } from "zod";
 import { nameRegex, onlyDigitsRegex } from "@/regex/feedbackFormRegex";
 
 import {
+  MESSAGE_LENGTH_VALIDATION,
   NAME_LENGTH_VALIDATION,
   NAME_REGEX_VALIDATION,
   TEL_LENGTH_VALIDATION,
   TEL_REGEX_VALIDATION,
 } from "./validationMessages";
 
-const useFeedbackFormSchema = () => {
+const useFullFeedbackFormSchema = () => {
   const feedbackFormSchema = z.object({
     name: z
       .string()
@@ -23,13 +24,14 @@ const useFeedbackFormSchema = () => {
       .min(7, TEL_LENGTH_VALIDATION)
       .max(15, TEL_LENGTH_VALIDATION)
       .regex(onlyDigitsRegex, TEL_REGEX_VALIDATION),
+    message: z.string().max(1000, MESSAGE_LENGTH_VALIDATION).optional(),
   });
 
   return feedbackFormSchema;
 };
 
-export type FeedbackFormSchema = z.infer<
-  ReturnType<typeof useFeedbackFormSchema>
+export type FullFeedbackFormSchema = z.infer<
+  ReturnType<typeof useFullFeedbackFormSchema>
 >;
 
-export default useFeedbackFormSchema;
+export default useFullFeedbackFormSchema;
