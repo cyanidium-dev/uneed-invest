@@ -6,8 +6,8 @@ const HeroInvestment = () => {
   return (
     <div className="max-xl:mx-auto max-xl:w-full max-xl:max-w-[330px] xl:w-[471px]">
       {investmentOptions.map(({ label, variant, items, decor }) => (
-        <div key={label} className="mb-7 last:mb-0">
-          <div className="mb-3 flex justify-between xl:mb-5">
+        <div key={label} className="mb-7 last:mb-0 xl:mb-8 xl:first:mt-[80px]">
+          <div className="mb-3 flex items-center justify-between xl:mb-5">
             {decor && <Circles />}
 
             <h3 className="text-[24px] font-bold uppercase leading-none xl:text-[36px]">
@@ -20,7 +20,7 @@ const HeroInvestment = () => {
               <li key={i}>
                 <InfoBox
                   className={
-                    "px-[10px] py-5 text-center font-montserrat text-sm font-semibold uppercase leading-[20px] text-white"
+                    "px-[10px] py-5 text-center font-montserrat text-sm font-semibold uppercase leading-[20px] text-white xl:px-[15px] xl:py-[34px]"
                   }
                   variant={variant}
                 >

@@ -45,7 +45,7 @@ const BaseButton = ({
   const Component = href ? (isExternal ? "a" : Link) : "button";
 
   const buttonStyles = cn(
-    "font-helvetica text-[12px] font-bold uppercase leading-[20px] h-[50px]",
+    "font-helvetica text-[12px] rounded-full font-bold uppercase leading-[20px] h-[50px]",
     variant === "accent" && "bg-accent text-light",
     variant === "light" && "bg-light text-dark",
     variant === "dark" && "bg-dark text-light",
