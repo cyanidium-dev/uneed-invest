@@ -41,7 +41,7 @@ const BaseForm = () => {
     <FormProvider {...methods}>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto flex w-full flex-col gap-4 xl:gap-5"
+        className="flex w-full flex-col gap-4 max-xl:mx-auto xl:ml-auto xl:w-[365px] xl:gap-5"
       >
         <FormField name="name" type="text" label="Ім’я та прізвище" />
 

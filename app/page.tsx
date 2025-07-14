@@ -11,6 +11,7 @@ import Occupancy from "@/components/sections/occupancy/Occupancy";
 import Partnership from "@/components/sections/partnership/Partnership";
 import Reviews from "@/components/sections/reviews/Reviews";
 import Token from "@/components/sections/token/Token";
+import TopCTA from "@/components/sections/topCTA/TopCTA";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Locations />
       <Estimate />
       <Occupancy />
-
+      <TopCTA />
       <Advantages />
       <Partnership />
       <Calculator />
