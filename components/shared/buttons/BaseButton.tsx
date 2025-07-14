@@ -10,10 +10,21 @@ import { cn } from "@/utils/cn";
 interface IBaseButtonProps {
   children: ReactNode;
   href?: string;
-  variant?: "accent" | "light" | "dark" | "transparent" | "nav";
+  variant?: "accent" | "light" | "dark" | "transparent" | "nav" | "footer-nav";
   className?: string;
   onClick?: () => void;
+  target?: "_blank" | "_self";
+  rel?: string;
+  ariaLabel?: string;
 }
+
+const isExternalLink = (href?: string) => {
+  return href
+    ? href.startsWith("http") ||
+        href.startsWith("mailto:") ||
+        href.startsWith("tel:")
+    : false;
+};
 
 const BaseButton = ({
   children,
@@ -21,9 +32,13 @@ const BaseButton = ({
   variant = "accent",
   className,
   onClick,
+  target,
+  rel,
+  ariaLabel,
   ...rest
 }: IBaseButtonProps) => {
-  const Component = href ? Link : "button";
+  const isExternal = isExternalLink(href);
+  const Component = href ? (isExternal ? "a" : Link) : "button";
 
   const buttonStyles = cn(
     "font-helvetica text-[12px] font-bold uppercase leading-[20px] h-[50px]",
@@ -33,18 +48,21 @@ const BaseButton = ({
     variant === "transparent" && "bg-transparent text-dark",
     variant === "nav" &&
       "bg-transparent h-8 text-dark min-w-fit px-2 font-manrope text-[14px] leading-[18px] tracking-[16%] xl:text-[14px] xl:font-medium xl:leading-[20px] xl:tracking-normal",
-
+    variant === "footer-nav" &&
+      "bg-transparent h-8 text-light min-w-fit px-2 font-manrope font-normal text-[14px] leading-[18px] tracking-[16%] xl:text-[14px] xl:font-medium xl:leading-[20px] xl:tracking-normal xl:hover:text-accent xl:focus:text-accent",
     className
   );
 
   return (
     <Button
       as={Component}
-      radius="full"
       href={href}
       onPress={onClick}
-      {...rest}
+      target={isExternal ? "_blank" : target}
+      rel={isExternal ? "noopener noreferrer" : rel}
       className={buttonStyles}
+      aria-label={ariaLabel}
+      {...rest}
     >
       {children}
     </Button>

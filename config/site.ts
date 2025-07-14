@@ -36,10 +36,27 @@ export const siteConfig = {
     },
   ],
 
+  info: [
+    {
+      label: "Юридичні деталі",
+      href: "#",
+    },
+    {
+      label: "ФОП",
+      href: "#",
+    },
+    {
+      label: "Оферта",
+      href: "#",
+    },
+    {
+      label: "Конфіденціальність",
+      href: "#",
+    },
+  ],
+
   links: {
-    linkedIn: "https://www.linkedin.com/feed/",
-    instagram: "https://www.instagram.com/",
-    telegram: "https://web.telegram.org/a/",
+    youtube: "https://www.youtube.com/",
     tikTok: "https://www.tiktok.com/uk-UA/",
   },
 

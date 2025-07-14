@@ -193,3 +193,70 @@ export const AccordionArrowIcon: FC<IconSvgProps> = ({
     />
   </svg>
 );
+
+export const CyanidiumLogo: FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 18 18"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M7.689 17.296 11.195 4.27h1.134L8.462 17.296H7.69ZM13.384 16.717v-1.362l3.843-2.835-3.867-2.836.024-1.216L18 11.732v1.72l-4.616 3.265ZM5.602 16.645v-1.362L1.76 12.447l3.867-2.835-.025-1.216L.987 11.66v1.72l4.615 3.265Z"
+    />
+    <path
+      fill="currentColor"
+      d="M13.526 5.335c-.54.54-2.517.9-2.517.9s-.898-2.158-.719-2.877c.18-.719.72-1.258.72-1.258.921-.975 1.655-1.192 3.055-1.438.262 1.869 0 4.134-.54 4.673Z"
+    />
+  </svg>
+);
+
+export const YoutubeIcon: FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 25"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="m10 15.5 5.19-3-5.19-3v6Zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09l.06.84c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19.5c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12.5c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5.5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73Z"
+    />
+  </svg>
+);
+
+export const TikTokIcon: FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 25"
+    height={size || height}
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M16.6 6.32a4.28 4.28 0 0 1-1.06-2.82h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48v-3.16c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.51a7.35 7.35 0 0 0 4.3 1.38V7.8s-1.88.09-3.24-1.48Z"
+    />
+  </svg>
+);
