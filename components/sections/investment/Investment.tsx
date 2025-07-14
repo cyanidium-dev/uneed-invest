@@ -15,16 +15,13 @@ const Investment = () => {
               мінімальним внеском та почати отримувати прибуток від реального
               бізнесу.
             </p>
-            <div className="h-[186px] w-[320px] rounded-xl border-4 border-solid border-accent bg-light max-xl:hidden">
-              Image
-            </div>
+
+            <div className="h-[186px] w-[320px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/investment/investment-2.webp')]" />
           </div>
         </div>
 
         <div className="flex max-xl:mb-11 max-xl:mr-[127px] max-xl:max-w-[193px] xl:justify-between">
-          <div className="h-[152px] w-[502px] rounded-xl border-4 border-solid border-accent bg-light max-xl:hidden">
-            Image
-          </div>
+          <div className="h-[152px] w-[502px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/investment/investment-3.webp')]" />
 
           <div className="flex flex-col gap-4 xl:w-[583px] xl:flex-col-reverse xl:justify-between">
             <h2 className="text-[24px] font-bold uppercase leading-[1.22] xl:text-[44px]">
@@ -44,9 +41,7 @@ const Investment = () => {
           starVariant="accent-light"
         />
 
-        <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-xl border-4 border-solid border-accent bg-light max-xl:bottom-0 xl:right-[435px] xl:top-[0]">
-          Image
-        </div>
+        <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-[url('/images/investment/investment-1.webp')] bg-cover bg-no-repeat max-xl:bottom-0 xl:right-[435px] xl:top-[0]" />
       </div>
     </section>
   );

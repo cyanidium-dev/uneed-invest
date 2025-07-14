@@ -27,15 +27,12 @@ const About = () => {
             </p>
           </div>
 
-          <div className="h-[320px] w-full rounded-xl border-4 border-solid border-accent bg-light xl:h-[491px] xl:w-[360px]">
-            Image
-          </div>
+          <div className="h-[320px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-top-mob.webp')] bg-cover bg-no-repeat xl:h-[491px] xl:w-[360px] xl:bg-[url('/images/about/about-top-desk.webp')]" />
         </div>
 
         <AboutAdvantages />
 
-        <div className="relative h-[210px] w-full rounded-xl border-4 border-solid border-accent bg-light max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]">
-          Image
+        <div className="relative h-[210px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-bot-mob.webp')] bg-cover bg-no-repeat max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]">
           <StarInfoBox
             text="5 апартаментів = 2300$ прибуток"
             starVariant="accent-light"
