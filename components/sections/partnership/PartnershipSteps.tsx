@@ -4,12 +4,12 @@ import { partnershipData } from "@/data/partnershipData";
 
 const PartnershipSteps = () => {
   return (
-    <ul className="mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
+    <ul className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
       {partnershipData.map(({ id, title }) => (
         <li
           key={id}
           className={cn(
-            "relative flex h-[160px] items-center bg-cover bg-no-repeat p-5 font-manrope font-bold uppercase odd:justify-end odd:bg-accent-light even:justify-between even:bg-accent max-xl:odd:text-right xl:h-[558px] xl:w-1/6 xl:flex-col-reverse xl:pb-[72px] xl:pt-10",
+            "relative z-[1] flex h-[160px] items-center bg-cover bg-no-repeat p-5 font-manrope font-bold uppercase odd:justify-end odd:bg-accent-light even:justify-between even:bg-accent max-xl:odd:text-right xl:h-[558px] xl:w-1/6 xl:flex-col-reverse xl:pb-[72px] xl:pt-10",
             id === 1 &&
               "bg-[url('/images/partnership/partnership-1-mob.webp')] xl:bg-[url('/images/partnership/partnership-1-desk.webp')]",
             id === 3 &&
@@ -35,6 +35,8 @@ const PartnershipSteps = () => {
           )}
         </li>
       ))}
+
+      <div className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] bg-[url('/images/partnership/partnership-decor-mob.svg')] bg-cover bg-no-repeat xl:-right-[200px] xl:-top-[380px] xl:h-[1251px] xl:w-[1300px] xl:bg-[url('/images/partnership/partnership-decor-desk.svg')]" />
     </ul>
   );
 };

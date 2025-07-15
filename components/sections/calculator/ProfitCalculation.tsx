@@ -32,7 +32,7 @@ const ProfitCalculation = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
       <div className="mb-6 xl:mb-8 xl:flex xl:h-[67px] xl:justify-between">
         <Select
           className="max-xl:mb-6 xl:max-w-[360px]"
@@ -40,7 +40,6 @@ const ProfitCalculation = () => {
           radius="sm"
           size="lg"
           aria-label="Обрати тип локації"
-          // defaultSelectedKeys={calculationVariants[0].key}
           defaultSelectedKeys={new Set([calculationVariants[0].key])}
           classNames={{
             value:
@@ -80,6 +79,8 @@ const ProfitCalculation = () => {
           </li>
         ))}
       </ul>
+
+      <div className="absolute -bottom-[440px] -right-[100px] -z-[1] h-[605px] w-[630px] bg-[url('/images/calculator/calculator-decor.svg')] bg-cover bg-no-repeat xl:-right-[70px] xl:-top-[320px]" />
     </div>
   );
 };

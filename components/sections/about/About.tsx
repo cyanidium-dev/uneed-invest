@@ -8,9 +8,9 @@ const About = () => {
   return (
     <section
       id={ROUTES.ABOUT.id}
-      className="overflow-hidden bg-dark pb-[60px] pt-10 text-light xl:pb-[68px] xl:pt-[95px]"
+      className="relative overflow-hidden bg-dark pb-[60px] pt-10 text-light xl:pb-[68px] xl:pt-[95px]"
     >
-      <div className="container relative flex max-w-[400px] flex-col gap-6 xl:max-w-[1280px] xl:flex-row-reverse">
+      <div className="container relative z-[1] flex max-w-[400px] flex-col gap-6 xl:max-w-[1280px] xl:flex-row-reverse">
         <div className="flex flex-col xl:mr-auto xl:flex-row-reverse xl:justify-end xl:gap-8">
           <div className="mb-[38px] flex w-[210px] flex-col gap-6 xl:w-[310px] xl:gap-9">
             <h2 className="text-[36px] font-bold uppercase leading-none xl:text-[52px]">
@@ -27,7 +27,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="h-[320px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-top-mob.webp')] bg-cover bg-no-repeat xl:h-[491px] xl:w-[360px] xl:bg-[url('/images/about/about-top-desk.webp')]" />
+          <div className="relative h-[320px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-top-mob.webp')] bg-cover bg-no-repeat xl:h-[491px] xl:w-[360px] xl:bg-[url('/images/about/about-top-desk.webp')]">
+            <div className="absolute -bottom-[180px] -right-[180px] -z-[1] h-[761px] w-[856px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/about/about-decor-left-desk.webp')]" />
+          </div>
         </div>
 
         <AboutAdvantages />
@@ -40,6 +42,11 @@ const About = () => {
           />
         </div>
       </div>
+
+      <div className="absolute right-0 top-[0px] h-[557px] w-[303px] bg-[url('/images/about/about-decor-top-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
+      <div className="absolute bottom-[0px] left-0 h-[676px] w-[360px] bg-[url('/images/about/about-decor-bot-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
+
+      <div className="absolute bottom-[0px] right-0 h-[636px] w-[460px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/about/about-decor-right-desk.webp')]" />
     </section>
   );
 };
