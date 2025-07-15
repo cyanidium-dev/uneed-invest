@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 import Marquee from "@/components/shared/marquee/Marquee";
@@ -43,7 +45,27 @@ const Hero = () => {
         <HeroInvestment />
       </div>
 
-      <div className="absolute left-0 top-0 h-full w-full bg-[url('/images/hero/hero-bg-mob.webp')] bg-cover bg-no-repeat xl:w-1/2 xl:bg-[url('/images/hero/hero-bg-desk.webp')]" />
+      {/* <div className="absolute left-0 top-0 h-full w-full bg-[url('/images/hero/hero-bg-mob.webp')] bg-cover bg-no-repeat xl:w-1/2 xl:bg-[url('/images/hero/hero-bg-desk.webp')]" /> */}
+      <div className="absolute left-0 top-0 h-full w-full xl:w-1/2">
+        <Image
+          src="/images/hero/hero-bg-mob.webp"
+          alt="Hero background mobile"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 1279px) 100vw, 50vw"
+          className="object-cover object-top xl:hidden"
+        />
+        <Image
+          src="/images/hero/hero-bg-desk.webp"
+          alt="Hero background desktop"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(min-width: 1280px) 50vw"
+          className="hidden object-cover xl:block"
+        />
+      </div>
 
       <div className="absolute -bottom-[200px] left-0 h-[380px] w-[183px] bg-[url('/images/hero/hero-decor-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
       <div className="absolute right-0 top-0 h-[356px] w-[378px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/hero/hero-decor-top-desk.webp')]" />
