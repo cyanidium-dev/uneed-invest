@@ -31,14 +31,9 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/hero/hero-bg-desk.webp"
-          type="image/webp"
-        />
-        <link
-          rel="preload"
-          as="image"
           href="/images/hero/hero-bg-mob.webp"
           type="image/webp"
+          fetchPriority="high"
         />
       </head>
 
