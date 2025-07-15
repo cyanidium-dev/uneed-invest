@@ -6,7 +6,7 @@ import FaqList from "./FaqList";
 const Faq = () => {
   return (
     <section className="relative overflow-hidden pb-[113px] pt-10 xl:pb-[197px] xl:pt-[130px]">
-      <div className="container max-w-[600px] xl:max-w-[1280px]">
+      <div className="container relative z-[1] max-w-[600px] xl:max-w-[1280px]">
         <div className="relative mb-6 overflow-hidden rounded-full bg-accent px-5 py-6 xl:mb-10 xl:p-11">
           <h2 className="text-[18px] font-bold uppercase leading-[1.2] text-light xl:text-[48px]">
             Часті питання
@@ -21,6 +21,8 @@ const Faq = () => {
 
         <FaqList />
       </div>
+
+      <div className="absolute bottom-[90px] right-0 h-[580px] w-[401px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/faq/faq-decor-desk.svg')]" />
 
       <Marquee className="absolute bottom-0 left-0" variant="dark" />
     </section>

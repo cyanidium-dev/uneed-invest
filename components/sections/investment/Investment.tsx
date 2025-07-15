@@ -2,8 +2,8 @@ import StarInfoBox from "@/components/shared/box/StarInfoBox";
 
 const Investment = () => {
   return (
-    <section className="h-[700px] overflow-hidden pb-[45px] pt-[100px] max-xl:h-[619px] xl:h-[782px] xl:pb-[135px] xl:pt-[105px]">
-      <div className="container relative h-full max-w-[500px] xl:max-w-[1280px]">
+    <section className="relative h-[700px] pb-[45px] pt-[100px] max-xl:h-[619px] max-xl:overflow-hidden xl:h-[782px] xl:pb-[135px] xl:pt-[105px]">
+      <div className="container relative z-[1] h-full max-w-[500px] xl:max-w-[1280px]">
         <div className="mb-11 flex flex-col gap-4 xl:flex-row xl:justify-between">
           <h2 className="text-[24px] font-bold uppercase leading-[1.22] xl:w-[448px] xl:text-[44px]">
             Від <span className="text-accent">$100</span> до частки у{" "}
@@ -43,6 +43,8 @@ const Investment = () => {
 
         <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-[url('/images/investment/investment-1.webp')] bg-cover bg-no-repeat max-xl:bottom-0 xl:right-[435px] xl:top-[0]" />
       </div>
+
+      <div className="absolute right-0 top-0 h-[1063px] w-[375px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/investment/investment-gradient-desk.svg')]" />
     </section>
   );
 };
