@@ -27,7 +27,21 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="uk" className="scroll-smooth">
-      <head />
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-bg-desk.webp"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-bg-mob.webp"
+          type="image/webp"
+        />
+      </head>
+
       <body className="min-h-screen bg-light font-helvetica text-[14px] text-dark antialiased">
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex h-screen flex-col">
