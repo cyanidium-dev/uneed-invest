@@ -28,12 +28,17 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="uk" className="scroll-smooth">
       <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
         <link
           rel="preload"
           as="image"
           href="/images/hero/hero-bg-mob.webp"
           type="image/webp"
           fetchPriority="high"
+          media="(max-width: 1280px)"
         />
       </head>
 
