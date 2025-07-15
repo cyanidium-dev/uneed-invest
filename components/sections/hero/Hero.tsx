@@ -44,6 +44,10 @@ const Hero = () => {
       </div>
 
       <div className="absolute left-0 top-0 h-full w-full bg-[url('/images/hero/hero-bg-mob.webp')] bg-cover bg-no-repeat xl:w-1/2 xl:bg-[url('/images/hero/hero-bg-desk.webp')]" />
+
+      <div className="absolute -bottom-[200px] left-0 h-[380px] w-[183px] bg-[url('/images/hero/hero-decor-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
+      <div className="absolute right-0 top-0 h-[356px] w-[378px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/hero/hero-decor-top-desk.webp')]" />
+      <div className="absolute bottom-0 right-[23%] h-[306px] w-[799px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/hero/hero-decor-bot-desk.webp')]" />
     </section>
   );
 };
