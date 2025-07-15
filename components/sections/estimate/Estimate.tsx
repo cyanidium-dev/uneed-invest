@@ -14,6 +14,8 @@ const Estimate = () => {
 
         <RevenueList />
       </div>
+
+      <div className="absolute left-0 h-[734px] w-[327px] bg-[url('/images/estimate/estimate-gradient-mob.svg')] bg-cover bg-no-repeat max-xl:top-0 xl:bottom-0 xl:h-[419px] xl:w-[331px] xl:bg-[url('/images/estimate/estimate-gradient-desk.svg')]" />
     </section>
   );
 };
