@@ -19,35 +19,55 @@ import Hero from "@/components/sections/hero/Hero";
 // import TopCTA from "@/components/sections/topCTA/TopCTA";
 
 const Advantages = dynamic(
-  () => import("@/components/sections/advantages/Advantages")
+  () => import("@/components/sections/advantages/Advantages"),
+  { ssr: false }
 );
-const BotCTA = dynamic(() => import("@/components/sections/botCTA/BotCTA"));
+const BotCTA = dynamic(() => import("@/components/sections/botCTA/BotCTA"), {
+  ssr: false,
+});
 const Business = dynamic(
-  () => import("@/components/sections/business/Business")
+  () => import("@/components/sections/business/Business"),
+  { ssr: false }
 );
 const Calculator = dynamic(
-  () => import("@/components/sections/calculator/Calculator")
+  () => import("@/components/sections/calculator/Calculator"),
+  { ssr: false }
 );
 const Estimate = dynamic(
-  () => import("@/components/sections/estimate/Estimate")
+  () => import("@/components/sections/estimate/Estimate"),
+  { ssr: false }
 );
-const FAQ = dynamic(() => import("@/components/sections/faq/FAQ"));
+const FAQ = dynamic(() => import("@/components/sections/faq/FAQ"), {
+  ssr: false,
+});
 const Investment = dynamic(
-  () => import("@/components/sections/investment/Investment")
+  () => import("@/components/sections/investment/Investment"),
+  { ssr: false }
 );
 const Locations = dynamic(
-  () => import("@/components/sections/locations/Locations")
+  () => import("@/components/sections/locations/Locations"),
+  { ssr: false }
 );
-const MidCTA = dynamic(() => import("@/components/sections/midCTA/MidCTA"));
+const MidCTA = dynamic(() => import("@/components/sections/midCTA/MidCTA"), {
+  ssr: false,
+});
 const Occupancy = dynamic(
-  () => import("@/components/sections/occupancy/Occupancy")
+  () => import("@/components/sections/occupancy/Occupancy"),
+  { ssr: false }
 );
 const Partnership = dynamic(
-  () => import("@/components/sections/partnership/Partnership")
+  () => import("@/components/sections/partnership/Partnership"),
+  { ssr: false }
 );
-const Reviews = dynamic(() => import("@/components/sections/reviews/Reviews"));
-const Token = dynamic(() => import("@/components/sections/token/Token"));
-const TopCTA = dynamic(() => import("@/components/sections/topCTA/TopCTA"));
+const Reviews = dynamic(() => import("@/components/sections/reviews/Reviews"), {
+  ssr: false,
+});
+const Token = dynamic(() => import("@/components/sections/token/Token"), {
+  ssr: false,
+});
+const TopCTA = dynamic(() => import("@/components/sections/topCTA/TopCTA"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
