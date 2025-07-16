@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="uk" className="scroll-smooth">
       <head>
-        <meta
+        {/* <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
+        /> */}
         <link
           rel="preload"
           as="image"
