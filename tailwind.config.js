@@ -16,9 +16,9 @@ const config = {
       },
       fontFamily: {
         helvetica: ["Helvetica", "sans-serif"],
-        manrope: ["Manrope", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
+        manrope: ["var(--font-manrope)", "sans-serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+        raleway: ["var(--font-raleway)", "sans-serif"],
       },
       container: {
         center: true,

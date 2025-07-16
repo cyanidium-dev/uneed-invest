@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Manrope, Montserrat, Raleway } from "next/font/google";
 
 import { siteConfig } from "@/config/site";
 
@@ -20,13 +21,38 @@ export const metadata: Metadata = {
   },
 };
 
+export const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+  weight: ["400", "600"],
+});
+
+export const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  display: "swap",
+  weight: ["400", "500"],
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="uk" className="scroll-smooth">
+    <html
+      suppressHydrationWarning
+      lang="uk"
+      className={`scroll-smooth ${manrope.variable} ${montserrat.variable} ${raleway.variable}`}
+    >
       <head>
         {/* <meta
           name="viewport"
