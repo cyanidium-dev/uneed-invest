@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 import BaseForm from "@/components/shared/form/BaseForm";
 
@@ -18,12 +20,19 @@ const TopCTA = () => {
 
         <BaseForm />
 
-        <div className="absolute -top-[112px] left-0 flex h-[610px] w-[742px] items-end bg-[url('/images/topCTA/topCTA-bg.webp')] bg-cover bg-no-repeat max-xl:hidden">
+        <div className="absolute -top-[112px] left-0 flex h-[610px] w-[742px] items-end max-xl:hidden">
+          <Image
+            src="/images/topCTA/topCTA-bg.webp"
+            alt="Фонове зображення"
+            fill
+            sizes="742px"
+            className="rounded-r-xl object-cover"
+          />
           <StarInfoBox
             text="5 апартаментів = 2300$ прибуток"
             boxVariant="light"
             starVariant="accent-dark"
-            boxClassName="w-[418px]"
+            boxClassName="w-[418px] relative z-[1]"
           />
         </div>
       </div>

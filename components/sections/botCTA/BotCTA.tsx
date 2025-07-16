@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Star from "@/components/shared/decor/Star";
 import BaseForm from "@/components/shared/form/BaseForm";
 
@@ -16,7 +18,14 @@ const BotCTA = () => {
 
         <BaseForm isFullForm />
 
-        <div className="absolute -top-[69px] left-0 flex h-[646px] w-[742px] items-end rounded-r-xl bg-[url('/images/botCTA/botCTA-bg.webp')] bg-cover bg-no-repeat max-xl:hidden">
+        <div className="absolute -top-[69px] left-0 flex h-[647px] w-[742px] items-end rounded-r-xl max-xl:hidden">
+          <Image
+            src="/images/botCTA/botCTA-bg.webp"
+            alt="Фонове зображення"
+            fill
+            sizes="742px"
+            className="block rounded-r-xl object-cover"
+          />
           <Star
             starVariant="dark"
             starClassName="absolute -bottom-[30px] -left-[74px] p-[37px] xl:size-[245px]"

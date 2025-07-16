@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Star from "@/components/shared/decor/Star";
 import BaseForm from "@/components/shared/form/BaseForm";
 
@@ -16,7 +18,14 @@ const MidCTA = () => {
 
         <BaseForm />
 
-        <div className="absolute -top-[112px] left-0 flex h-[610px] w-[742px] items-end bg-[url('/images/midCTA/midCTA-bg.webp')] bg-cover bg-no-repeat max-xl:hidden">
+        <div className="absolute -top-[112px] left-0 flex h-[610px] w-[742px] items-end max-xl:hidden">
+          <Image
+            src="/images/midCTA/midCTA-bg.webp"
+            alt="Фонове зображення"
+            fill
+            sizes="742px"
+            className="rounded-r-xl object-cover"
+          />
           <Star
             starVariant="dark"
             starClassName="absolute -top-[60px] -right-[76px] p-[37px] xl:size-[245px]"
