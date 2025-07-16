@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Logo } from "@/components/icons";
 
 import FooterContacts from "./FooterContacts";
@@ -26,8 +28,20 @@ const Footer = () => {
 
         <FooterCopyright />
       </div>
-
-      <div className="absolute right-0 top-0 h-[589px] w-[204px] bg-[url('/images/footer/footer-decor-mob.svg')] bg-cover bg-no-repeat xl:right-[135px] xl:h-[225px] xl:w-[625px] xl:bg-[url('/images/footer/footer-decor-desk.svg')]" />
+      <Image
+        src="/images/footer/footer-decor-mob.svg"
+        alt="Декоративне зображення"
+        width={204}
+        height={598}
+        className="absolute right-0 top-0 object-cover xl:hidden"
+      />
+      <Image
+        src="/images/footer/footer-decor-desk.svg"
+        alt="Декоративне зображення"
+        width={625}
+        height={225}
+        className="absolute right-[135px] top-0 hidden object-cover xl:block"
+      />
     </footer>
   );
 };

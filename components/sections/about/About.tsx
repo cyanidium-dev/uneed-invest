@@ -51,7 +51,6 @@ const About = () => {
 
         <AboutAdvantages />
 
-        {/* <div className="relative h-[210px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-bot-mob.webp')] bg-cover bg-no-repeat max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]"> */}
         <div className="relative h-[210px] w-full rounded-2xl border-4 border-solid border-accent max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]">
           <Image
             src="/images/about/about-bot-mob.webp"
@@ -59,8 +58,6 @@ const About = () => {
             fill
             sizes="(max-width: 1279px) 450px"
             className="rounded-2xl object-cover xl:hidden"
-            loading="lazy"
-            fetchPriority="low"
           />
           <Image
             src="/images/about/about-bot-desk.webp"
@@ -68,8 +65,6 @@ const About = () => {
             fill
             sizes="(min-width: 1280px) 555px"
             className="rounded-2xl object-cover max-xl:hidden"
-            loading="lazy"
-            fetchPriority="low"
           />
           <StarInfoBox
             text="5 апартаментів = 2300$ прибуток"
@@ -79,10 +74,27 @@ const About = () => {
         </div>
       </div>
 
-      <div className="absolute right-0 top-[0px] h-[557px] w-[303px] bg-[url('/images/about/about-decor-top-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute bottom-[0px] left-0 h-[676px] w-[360px] bg-[url('/images/about/about-decor-bot-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
-
-      <div className="absolute bottom-[0px] right-0 h-[636px] w-[460px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/about/about-decor-right-desk.svg')]" />
+      <Image
+        src="/images/about/about-decor-top-mob.svg"
+        alt="Декоративне зображення"
+        width={303}
+        height={557}
+        className="absolute right-0 top-0 xl:hidden"
+      />
+      <Image
+        src="/images/about/about-decor-bot-mob.svg"
+        alt="Декоративне зображення"
+        width={360}
+        height={676}
+        className="absolute bottom-0 left-0 xl:hidden"
+      />
+      <Image
+        src="/images/about/about-decor-right-desk.svg"
+        alt="Декоративне зображення"
+        width={460}
+        height={636}
+        className="absolute bottom-0 right-0 max-xl:hidden"
+      />
     </section>
   );
 };

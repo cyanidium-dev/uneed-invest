@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { ROUTES } from "@/config/routes";
@@ -13,7 +15,15 @@ const Reviews = () => {
             variant="glass-dark"
             className="relative z-[1] flex gap-4 p-5 xl:gap-8 xl:p-8"
           >
-            <div className="h-[226px] w-[100px] shrink-0 bg-[url('/images/reviews/reviews-main.webp')] bg-cover bg-no-repeat xl:h-[446px] xl:w-[198px]" />
+            <div className="relative h-[226px] w-[100px] shrink-0 xl:h-[446px] xl:w-[198px]">
+              <Image
+                src="/images/reviews/reviews-main.webp"
+                alt="Фото"
+                fill
+                sizes="100px"
+                className="object-cover"
+              />
+            </div>
 
             <div className="ml-auto mt-auto min-w-0 max-xl:basis-[164px] xl:w-[256px]">
               <h2 className="mb-4 text-[24px] font-bold uppercase leading-none max-sm:text-[20px] xl:text-[32px]">
@@ -35,7 +45,13 @@ const Reviews = () => {
             />
           </InfoBox>
 
-          <div className="absolute -top-[150px] right-0 -z-[10] h-[491px] w-[537px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/reviews/reviews-decor-desk.svg')]" />
+          <Image
+            src="/images/reviews/reviews-decor-desk.svg"
+            alt="Декоративне зображення"
+            width={537}
+            height={491}
+            className="absolute -top-[150px] right-0 -z-[10] object-cover max-xl:hidden xl:block"
+          />
         </div>
 
         <ReviewList />

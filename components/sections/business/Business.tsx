@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Circles from "@/components/shared/decor/Circles";
 import Marquee from "@/components/shared/marquee/Marquee";
 
@@ -22,14 +24,37 @@ const Business = () => {
 
         <BusinessGoals />
 
-        <div className="absolute -top-[160px] left-[275px] -z-[1] h-[943px] w-[1116px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/business/business-decor-desk.svg')]" />
+        <Image
+          src="/images/business/business-decor-desk.svg"
+          alt="Декоративне зображення"
+          width={1116}
+          height={943}
+          className="absolute -top-[160px] left-[275px] -z-[1] object-cover max-xl:hidden"
+        />
       </div>
-
       <Marquee className="absolute bottom-0 left-0" variant="dark" />
 
-      <div className="absolute right-0 top-[36px] h-[361px] w-[151px] bg-[url('/images/business/business-decor-top-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute bottom-[154px] left-0 h-[605px] w-[209px] bg-[url('/images/business/business-decor-bot-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute left-1/2 top-[172px] h-[435px] w-[141px] -translate-x-1/2 bg-[url('/images/business/business-line-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
+      <Image
+        src="/images/business/business-decor-top-mob.svg"
+        alt="Декоративне зображення"
+        width={151}
+        height={361}
+        className="absolute right-0 top-[36px] object-cover xl:hidden"
+      />
+      <Image
+        src="/images/business/business-decor-bot-mob.svg"
+        alt="Декоративне зображення"
+        width={209}
+        height={605}
+        className="absolute bottom-[154px] left-0 object-cover xl:hidden"
+      />
+      <Image
+        src="/images/business/business-line-mob.svg"
+        alt="Декоративне зображення"
+        width={141}
+        height={435}
+        className="absolute left-1/2 top-[172px] -translate-x-1/2 object-cover xl:hidden"
+      />
     </section>
   );
 };

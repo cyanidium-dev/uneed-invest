@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { ROUTES } from "@/config/routes";
 
 import LocationList from "./LocationList";
@@ -32,9 +34,27 @@ const Locations = () => {
         <MoreLocations />
       </div>
 
-      <div className="absolute bottom-[200px] left-0 h-[345px] w-[222px] bg-[url('/images/locations/locations-decor-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute left-1/4 top-[265px] h-[293px] w-[402px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/locations/locations-decor-top-desk.webp')]" />
-      <div className="absolute bottom-[47px] left-0 h-[441px] w-[347px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/locations/locations-decor-bot-desk.webp')]" />
+      <Image
+        src="/images/locations/locations-decor-mob.webp"
+        alt=""
+        width={222}
+        height={345}
+        className="absolute bottom-[200px] left-0 xl:hidden"
+      />
+      <Image
+        src="/images/locations/locations-decor-top-desk.webp"
+        alt=""
+        width={402}
+        height={293}
+        className="absolute left-1/4 top-[265px] max-xl:hidden"
+      />
+      <Image
+        src="/images/locations/locations-decor-bot-desk.webp"
+        alt=""
+        width={347}
+        height={441}
+        className="absolute bottom-[47px] left-0 max-xl:hidden"
+      />
     </section>
   );
 };

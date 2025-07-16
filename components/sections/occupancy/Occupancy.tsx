@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import OccupancyListDesk from "./OccupancyListDesk";
 import OccupancyListMob from "./OccupancyListMob";
 
@@ -14,7 +16,13 @@ const Occupancy = () => {
         <OccupancyListDesk />
       </div>
 
-      <div className="absolute -bottom-[30px] left-1/4 h-[417px] w-[482px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/occupancy/occupancy-decor-desk.webp')]" />
+      <Image
+        src="/images/occupancy/occupancy-decor-desk.webp"
+        alt="Декоративне зображення"
+        width={482}
+        height={417}
+        className="absolute -bottom-[30px] left-1/4 max-xl:hidden"
+      />
     </section>
   );
 };

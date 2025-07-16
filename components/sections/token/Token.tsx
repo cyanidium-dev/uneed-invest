@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { ShortLogo } from "@/components/icons";
 
 import HowTokenWork from "./HowTokenWork";
@@ -26,12 +28,38 @@ const Token = () => {
 
           <HowTokenWork />
         </div>
-
         <TokenICO />
-      </div>
 
-      <div className="absolute bottom-0 right-0 h-[283px] w-[302px] bg-[url('/images/token/token-decor-bot-mob.svg')] bg-cover bg-no-repeat xl:h-[406px] xl:w-[392px] xl:bg-[url('/images/token/token-decor-bot-mob.svg')]" />
-      <div className="absolute -left-[100px] -top-[120px] h-[1031px] w-[1047px] bg-[url('/images/token/token-decor-top-mob.svg')] bg-cover bg-no-repeat xl:-top-[50px] xl:left-0 xl:h-[830px] xl:w-[819px] xl:bg-[url('/images/token/token-decor-top-mob.svg')]" />
+        <div className="absolute -top-[250px] left-1/2 -z-[1] h-[1031px] w-[1047px] max-xl:block max-xl:-translate-x-1/2 xl:hidden">
+          <Image
+            src="/images/token/token-decor-top-mob.svg"
+            alt="Декоративне зображення"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <Image
+          src="/images/token/token-decor-top-desk.svg"
+          alt="Декоративне зображення"
+          width={819}
+          height={830}
+          className="absolute -top-[50px] left-0 -z-[1] hidden xl:block"
+        />
+      </div>
+      <Image
+        src="/images/token/token-decor-bot-mob.svg"
+        alt="Декоративне зображення"
+        width={302}
+        height={283}
+        className="absolute bottom-0 right-0 max-xl:block xl:hidden"
+      />
+      <Image
+        src="/images/token/token-decor-bot-desk.svg"
+        alt="Декоративне зображення"
+        width={392}
+        height={406}
+        className="absolute bottom-0 right-0 hidden xl:block"
+      />
     </section>
   );
 };

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
@@ -36,7 +38,13 @@ const OccupancyListDesk = () => {
           <div className="absolute bottom-0 right-0 h-[90px] w-[199px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />
         </InfoBox>
 
-        <div className="h-[219px] w-[265px] rounded-xl bg-[url('/images/occupancy/occupancy-3-desk.webp')] bg-cover bg-no-repeat" />
+        <Image
+          src="/images/occupancy/occupancy-3-desk.webp"
+          alt="Фото приміщення"
+          width={265}
+          height={219}
+          className="rounded-xl"
+        />
 
         <InfoBox
           variant="dark"
@@ -55,7 +63,13 @@ const OccupancyListDesk = () => {
       </li>
 
       <li className="flex gap-5">
-        <div className="h-[219px] w-[550px] shrink-0 rounded-xl bg-[url('/images/occupancy/occupancy-5-desk.webp')] bg-cover bg-no-repeat" />
+        <Image
+          src="/images/occupancy/occupancy-5-desk.webp"
+          alt="Фото приміщення"
+          width={550}
+          height={219}
+          className="shrink-0 rounded-xl"
+        />
 
         <InfoBox
           variant="glass-dark"

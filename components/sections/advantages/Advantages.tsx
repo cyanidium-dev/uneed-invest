@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Marquee from "@/components/shared/marquee/Marquee";
 
 import AdvantagesListDesk from "./AdvantagesListDesk";
@@ -18,9 +20,27 @@ const Advantages = () => {
 
       <Marquee className="absolute bottom-0 left-0" />
 
-      <div className="absolute -top-[250px] left-0 h-[361px] w-[248px] bg-[url('/images/advantages/advantages-decor-top-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute bottom-[80px] right-0 h-[490px] w-[233px] bg-[url('/images/advantages/advantages-decor-bot-mob.webp')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute right-0 top-0 h-[496px] w-[254px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/advantages/advantages-decor-desk.webp')]" />
+      <Image
+        src="/images/advantages/advantages-decor-top-mob.webp"
+        alt="декоративне зображення"
+        width={248}
+        height={361}
+        className="absolute -top-[250px] left-0 object-cover xl:hidden"
+      />
+      <Image
+        src="/images/advantages/advantages-decor-bot-mob.webp"
+        alt="декоративне зображення"
+        width={233}
+        height={490}
+        className="absolute bottom-[80px] right-0 object-cover xl:hidden"
+      />
+      <Image
+        src="/images/advantages/advantages-decor-desk.webp"
+        alt="декоративне зображення"
+        width={254}
+        height={496}
+        className="absolute right-0 top-0 object-cover max-xl:hidden"
+      />
     </section>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 import { Select, SelectItem } from "@heroui/select";
 
@@ -80,7 +81,14 @@ const ProfitCalculation = () => {
         ))}
       </ul>
 
-      <div className="absolute -bottom-[440px] -right-[100px] -z-[1] h-[605px] w-[630px] bg-[url('/images/calculator/calculator-decor.svg')] bg-cover bg-no-repeat xl:-right-[70px] xl:-top-[320px]" />
+      <div className="absolute -bottom-[440px] -right-[100px] -z-[1] h-[605px] w-[630px] xl:-right-[70px] xl:-top-[320px]">
+        <Image
+          src="/images/calculator/calculator-decor.svg"
+          alt="Декоративне зображення"
+          fill
+          sizes="630px"
+        />
+      </div>
     </div>
   );
 };

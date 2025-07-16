@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { StarIcon } from "@/components/icons";
 import Marquee from "@/components/shared/marquee/Marquee";
 import { ROUTES } from "@/config/routes";
@@ -26,7 +28,13 @@ const Faq = () => {
         <FaqList />
       </div>
 
-      <div className="absolute bottom-[90px] right-0 h-[580px] w-[401px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/faq/faq-decor-desk.svg')]" />
+      <Image
+        src="/images/faq/faq-decor-desk.svg"
+        alt="Декоративне зображення"
+        width={401}
+        height={580}
+        className="absolute bottom-[90px] right-0 object-cover max-xl:hidden xl:block"
+      />
 
       <Marquee className="absolute bottom-0 left-0" variant="dark" />
     </section>

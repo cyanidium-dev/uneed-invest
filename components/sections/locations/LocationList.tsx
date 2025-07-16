@@ -20,8 +20,6 @@ const LocationList = () => {
                 src={imgUrl}
                 alt={`Фото локації за адресою ${address}`}
                 className="h-[80px] w-[102px] rounded-md xl:h-[129px] xl:w-[165px]"
-                loading="lazy"
-                fetchPriority="low"
               />
 
               <div className="flex flex-col gap-4 xl:justify-center xl:gap-[18px]">

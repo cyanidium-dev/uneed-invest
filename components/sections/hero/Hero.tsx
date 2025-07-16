@@ -52,6 +52,7 @@ const Hero = () => {
           fill
           priority
           fetchPriority="high"
+          loading="eager"
           sizes="(min-width: 1280px) 50vw, 100vw"
           className="object-cover"
         />
@@ -59,9 +60,38 @@ const Hero = () => {
         <div className="absolute bottom-0 z-[1] h-[936px] w-[663px] bg-white/[37%] shadow-[inset_0px_3.5px_10.5px_rgba(0,0,0,0.25)] backdrop-blur-[28.7px] [border-radius:50%/50%] max-xl:left-1/2 max-xl:-translate-x-1/2 xl:-bottom-[299px] xl:-right-[88px] xl:h-[935px] xl:w-[948px]" />
       </div>
 
-      <div className="absolute -bottom-[200px] left-0 h-[380px] w-[183px] bg-[url('/images/hero/hero-decor-mob.svg')] bg-cover bg-no-repeat xl:hidden" />
-      <div className="absolute right-0 top-0 h-[356px] w-[378px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/hero/hero-decor-top-desk.svg')]" />
-      <div className="absolute bottom-0 right-[23%] h-[306px] w-[799px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/hero/hero-decor-bot-desk.svg')]" />
+      <Image
+        src="/images/hero/hero-decor-mob.svg"
+        alt="Декоративне зображення"
+        width={183}
+        height={380}
+        className="absolute -bottom-[200px] left-0 xl:hidden"
+        priority
+        loading="eager"
+        fetchPriority="high"
+      />
+
+      <Image
+        src="/images/hero/hero-decor-top-desk.svg"
+        alt="Декоративне зображення"
+        width={378}
+        height={356}
+        className="absolute right-0 top-0 max-xl:hidden"
+        priority
+        loading="eager"
+        fetchPriority="high"
+      />
+
+      <Image
+        src="/images/hero/hero-decor-bot-desk.svg"
+        alt="Декоративне зображення"
+        width={799}
+        height={306}
+        className="absolute bottom-0 right-[23%] max-xl:hidden"
+        priority
+        loading="eager"
+        fetchPriority="high"
+      />
     </section>
   );
 };

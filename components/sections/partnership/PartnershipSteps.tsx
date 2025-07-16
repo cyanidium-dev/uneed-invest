@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Circles from "@/components/shared/decor/Circles";
 import { cn } from "@/utils/cn";
 import { partnershipData } from "@/data/partnershipData";
@@ -5,7 +7,7 @@ import { partnershipData } from "@/data/partnershipData";
 const PartnershipSteps = () => {
   return (
     <div className="relative">
-      <ul className="mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
+      <ul className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
         {partnershipData.map(({ id, title }) => (
           <li
             key={id}
@@ -36,9 +38,24 @@ const PartnershipSteps = () => {
             )}
           </li>
         ))}
+
+        <Image
+          src="/images/partnership/partnership-decor-desk.svg"
+          alt="Декоративне зображення"
+          width={1300}
+          height={1251}
+          className="absolute -right-[200px] -top-[380px] max-xl:hidden"
+        />
       </ul>
 
-      <div className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] bg-[url('/images/partnership/partnership-decor-mob.svg')] bg-cover bg-no-repeat xl:-right-[200px] xl:-top-[380px] xl:h-[1251px] xl:w-[1300px] xl:bg-[url('/images/partnership/partnership-decor-desk.svg')]" />
+      <div className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] xl:hidden">
+        <Image
+          src="/images/partnership/partnership-decor-mob.svg"
+          alt="Декоративне зображення"
+          fill
+          className="object-cover"
+        />
+      </div>
     </div>
   );
 };

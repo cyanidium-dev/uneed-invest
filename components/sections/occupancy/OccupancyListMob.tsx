@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
@@ -40,7 +42,13 @@ const OccupancyListMob = () => {
           <p className={baseText}>{reviews.description}</p>
         </InfoBox>
 
-        <div className="h-[full] w-[102px] shrink-0 rounded-xl bg-[url('/images/occupancy/occupancy-3-mob.webp')] bg-cover bg-no-repeat" />
+        <Image
+          src="/images/occupancy/occupancy-3-mob.webp"
+          alt="Фото приміщення"
+          width={102}
+          height={184}
+          className="shrink-0 rounded-xl"
+        />
       </li>
 
       <li>
@@ -58,7 +66,13 @@ const OccupancyListMob = () => {
       </li>
 
       <li className="flex gap-4">
-        <div className="h-[full] w-[102px] shrink-0 rounded-xl bg-[url('/images/occupancy/occupancy-5-mob.webp')] bg-cover bg-no-repeat" />
+        <Image
+          src="/images/occupancy/occupancy-5-mob.webp"
+          alt="Фото приміщення"
+          width={102}
+          height={184}
+          className="shrink-0 rounded-xl"
+        />
 
         <InfoBox variant="dark" className={cn(baseBox, "text-center")}>
           <p className={baseHeading}>{chatbot.title}</p>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 
 const Investment = () => {
@@ -16,7 +18,15 @@ const Investment = () => {
               бізнесу.
             </p>
 
-            <div className="h-[186px] w-[320px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/investment/investment-2.webp')]" />
+            <div className="relative hidden h-[186px] w-[320px] overflow-hidden rounded-2xl border-4 border-solid border-accent bg-accent-light xl:block">
+              <Image
+                src="/images/investment/investment-2.webp"
+                alt="Фото інтер'єра"
+                fill
+                sizes="320px"
+                className="rounded-2xl object-cover"
+              />
+            </div>
           </div>
         </div>
 
@@ -41,10 +51,24 @@ const Investment = () => {
           starVariant="accent-light"
         />
 
-        <div className="absolute -right-[149px] h-[342px] w-[275px] rounded-2xl border-4 border-solid border-accent bg-accent-light bg-[url('/images/investment/investment-1.webp')] bg-cover bg-no-repeat max-xl:bottom-0 xl:right-[435px] xl:top-[0]" />
+        <div className="absolute -right-[149px] h-[342px] w-[275px] overflow-hidden rounded-2xl border-4 border-solid border-accent bg-accent-light max-xl:bottom-0 xl:right-[435px] xl:top-0">
+          <Image
+            src="/images/investment/investment-1.webp"
+            alt="Фото інтер'єра"
+            fill
+            sizes="275px"
+            className="rounded-2xl object-cover"
+          />
+        </div>
       </div>
 
-      <div className="absolute right-0 top-0 h-[1063px] w-[375px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/investment/investment-gradient-desk.svg')]" />
+      <Image
+        src="/images/investment/investment-gradient-desk.svg"
+        alt="Декоративне зображення"
+        width={375}
+        height={1063}
+        className="absolute right-0 top-0 hidden max-xl:hidden xl:block"
+      />
     </section>
   );
 };
