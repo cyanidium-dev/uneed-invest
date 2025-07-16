@@ -38,8 +38,6 @@ const config = {
         light: "#ffffff",
         accent: "#FF7300",
         "accent-light": "#FF9D4C",
-
-        "glass-bg": "rgba(70, 70, 70, 0.26)",
       },
       animation: {
         marquee: "marquee 12s linear infinite",
@@ -68,13 +66,6 @@ const config = {
             background: "#FF7300",
           },
         },
-      },
-
-      boxShadow: {
-        "inset-glass": "inset 0px 4px 12.6px 0px rgba(255, 255, 255, 0.25)",
-      },
-      backdropBlur: {
-        glass: "26px",
       },
     },
   },

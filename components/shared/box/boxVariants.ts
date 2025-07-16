@@ -13,6 +13,7 @@ export const boxVariantClasses: Record<BoxVariant, string> = {
   dark: "bg-dark text-light",
   light: "bg-light text-dark",
   "glass-light":
-    "bg-glass-bg backdrop-blur-glass shadow-inset-glass text-light",
-  "glass-dark": "bg-glass-bg backdrop-blur-glass shadow-inset-glass text-dark",
+    "bg-rgba(70,70,70,0.26)] shadow-[inset_0px_4px_12.6px_rgba(255,255,255,0.25)] backdrop-blur-[26px] text-light",
+  "glass-dark":
+    "bg-white/[23%] shadow-[inset_0px_4px_14.4px_rgba(0,0,0,0.11)] backdrop-blur-[13.9px] text-dark",
 };
