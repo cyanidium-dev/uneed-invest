@@ -38,7 +38,7 @@ const Hero = () => {
         <Marquee
           className={cn(
             "absolute max-xl:left-0 max-xl:top-[416px]",
-            "xl:bottom-0 xl:left-0 xl:-rotate-90"
+            "xl:-left-[2550px] xl:top-0 xl:-rotate-90"
           )}
         />
 
