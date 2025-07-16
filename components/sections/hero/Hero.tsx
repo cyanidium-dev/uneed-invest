@@ -65,9 +65,6 @@ const Hero = () => {
           <Image
             src="/images/hero/hero-decor-bot-desk.svg"
             alt="Декоративне зображення"
-            // width={799}
-            // height={306}
-            // className="absolute -right-[500px] bottom-0 !block max-xl:hidden"
             fill
             sizes="799px"
             priority
