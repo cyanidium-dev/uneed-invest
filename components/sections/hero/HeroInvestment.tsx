@@ -10,9 +10,9 @@ const HeroInvestment = () => {
           <div className="mb-3 flex items-center justify-between xl:mb-5">
             {decor && <Circles />}
 
-            <h3 className="text-[24px] font-bold uppercase leading-none xl:text-[36px]">
+            <h2 className="text-[24px] font-bold uppercase leading-none xl:text-[36px]">
               {label}
-            </h3>
+            </h2>
           </div>
 
           <ul className="flex justify-between">

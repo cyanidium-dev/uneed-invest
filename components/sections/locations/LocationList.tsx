@@ -25,9 +25,9 @@ const LocationList = () => {
               />
 
               <div className="flex flex-col gap-4 xl:justify-center xl:gap-[18px]">
-                <h5 className="text-[18px] font-bold uppercase leading-none xl:w-[210px] xl:text-[24px]">
+                <p className="text-[18px] font-bold uppercase leading-none xl:w-[210px] xl:text-[24px]">
                   {place}
-                </h5>
+                </p>
                 <p className="w-[130px] font-manrope text-[12px] font-light leading-none xl:w-[204px] xl:text-[16px]">
                   {address}
                 </p>

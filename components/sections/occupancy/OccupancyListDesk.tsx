@@ -18,7 +18,7 @@ const OccupancyListDesk = () => {
             "justify-start bg-contain bg-no-repeat xl:absolute xl:right-20 xl:top-0 xl:h-[272px] xl:w-[455px] xl:p-9"
           )}
         >
-          <h4 className={baseHeading}>{marketing.title}</h4>
+          <p className={baseHeading}>{marketing.title}</p>
           <p className={baseText}>{marketing.description}</p>
 
           <div className="absolute bottom-0 left-1/2 w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat xl:h-[106px]" />
@@ -30,7 +30,7 @@ const OccupancyListDesk = () => {
           variant="dark"
           className={cn(baseBox, "xl:h-[219px] xl:w-[360px]")}
         >
-          <h4 className={cn(baseHeading, "w-[127px]")}>{publicity.title}</h4>
+          <p className={cn(baseHeading, "w-[127px]")}>{publicity.title}</p>
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
           <div className="absolute right-0 top-0 h-[128px] w-[155px] bg-[url('/images/occupancy/occupancy-2-decor-top.webp')] bg-cover bg-no-repeat" />
           <div className="absolute bottom-0 right-0 h-[90px] w-[199px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />

@@ -25,6 +25,7 @@ const Header = () => {
           variant="transparent"
           className="h-6 min-w-6 rounded-none p-0 xl:hidden"
           onClick={openMenu}
+          ariaLabel="Відкрити мобільне меню"
         >
           <BurgerIcon />
         </BaseButton>
