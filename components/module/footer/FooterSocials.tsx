@@ -5,9 +5,9 @@ import { siteConfig } from "@/config/site";
 const FooterSocials = () => {
   return (
     <div className="max-md:mb-10">
-      <h4 className="mb-[18px] text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
+      <h3 className="mb-[18px] text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
         Соц. мережі
-      </h4>
+      </h3>
 
       <ul className="-ml-2 flex gap-5">
         <li>

@@ -7,9 +7,9 @@ const FooterContacts = () => {
 
   return (
     <div className="max-md:mb-[60px]">
-      <h4 className="mb-6 text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
+      <h3 className="mb-6 text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
         Контакти
-      </h4>
+      </h3>
 
       <ul className="-ml-2 flex flex-col">
         <li>

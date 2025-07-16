@@ -4,9 +4,9 @@ import { siteConfig } from "@/config/site";
 const FooterNav = () => {
   return (
     <div className="max-md:mb-[60px]">
-      <h4 className="mb-6 text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
+      <h3 className="mb-6 text-[16px] font-bold uppercase leading-[20px] tracking-[1px]">
         Навігація
-      </h4>
+      </h3>
 
       <nav>
         {/* <ul className="-ml-2 flex flex-col xl:gap-[6px]"> */}

@@ -24,9 +24,9 @@ const TokenICO = () => {
                 variant={boxVariant}
                 className="flex h-full flex-col p-5 max-xl:gap-6 xl:p-8"
               >
-                <h4 className="text-[18px] font-bold uppercase leading-[1.22] xl:mb-6 xl:text-[32px]">
+                <h3 className="text-[18px] font-bold uppercase leading-[1.22] xl:mb-6 xl:text-[32px]">
                   {title}
-                </h4>
+                </h3>
                 <p className="font-manrope text-[12px] font-light leading-[1.22] xl:mb-[40px] xl:text-[16px]">
                   {description}
                 </p>
