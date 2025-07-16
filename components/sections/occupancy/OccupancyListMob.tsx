@@ -18,7 +18,7 @@ const OccupancyListMob = () => {
             "justify-start bg-contain bg-no-repeat max-xl:pt-6"
           )}
         >
-          <h4 className={baseHeading}>{marketing.title}</h4>
+          <p className={baseHeading}>{marketing.title}</p>
           <p className={baseText}>{marketing.description}</p>
 
           <div className="absolute bottom-0 left-1/2 h-[73px] w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat max-sm:h-[65px]" />
@@ -27,7 +27,7 @@ const OccupancyListMob = () => {
 
       <li>
         <InfoBox variant="dark" className={baseBox}>
-          <h4 className={cn(baseHeading, "w-[127px]")}>{publicity.title}</h4>
+          <p className={cn(baseHeading, "w-[127px]")}>{publicity.title}</p>
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
           <div className="absolute right-0 top-0 h-[117px] w-[141px] bg-[url('/images/occupancy/occupancy-2-decor-top.webp')] bg-cover bg-no-repeat" />
           <div className="absolute bottom-0 right-0 h-[82px] w-[181px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />
@@ -36,7 +36,7 @@ const OccupancyListMob = () => {
 
       <li className="flex gap-4">
         <InfoBox variant="glass-dark" className={cn(baseBox, "text-center")}>
-          <h4 className={baseHeading}>{reviews.title}</h4>
+          <p className={baseHeading}>{reviews.title}</p>
           <p className={baseText}>{reviews.description}</p>
         </InfoBox>
 
@@ -46,7 +46,7 @@ const OccupancyListMob = () => {
       <li>
         <InfoBox variant="dark" className={baseBox}>
           <div className="ml-auto w-[160px] text-right">
-            <h4 className={baseHeading}>{google.title}</h4>
+            <p className={baseHeading}>{google.title}</p>
             <p className={baseText}>{google.description}</p>
           </div>
 
@@ -61,7 +61,7 @@ const OccupancyListMob = () => {
         <div className="h-[full] w-[102px] shrink-0 rounded-xl bg-[url('/images/occupancy/occupancy-5-mob.webp')] bg-cover bg-no-repeat" />
 
         <InfoBox variant="dark" className={cn(baseBox, "text-center")}>
-          <h4 className={baseHeading}>{chatbot.title}</h4>
+          <p className={baseHeading}>{chatbot.title}</p>
           <p className={baseText}>{chatbot.description}</p>
         </InfoBox>
       </li>

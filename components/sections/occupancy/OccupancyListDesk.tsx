@@ -43,7 +43,7 @@ const OccupancyListDesk = () => {
           className={cn(baseBox, "xl:h-[219px] xl:w-[455px]")}
         >
           <div className="ml-auto w-[160px] text-right">
-            <h4 className={baseHeading}>{google.title}</h4>
+            <p className={baseHeading}>{google.title}</p>
             <p className={baseText}>{google.description}</p>
           </div>
 
@@ -61,7 +61,7 @@ const OccupancyListDesk = () => {
           variant="glass-dark"
           className={cn(baseBox, "text-center xl:h-[219px] xl:w-[265px]")}
         >
-          <h4 className={baseHeading}>{reviews.title}</h4>
+          <p className={baseHeading}>{reviews.title}</p>
           <p className={baseText}>{reviews.description}</p>
         </InfoBox>
 
@@ -69,7 +69,7 @@ const OccupancyListDesk = () => {
           variant="dark"
           className={cn(baseBox, "text-center xl:h-[219px] xl:w-[265px]")}
         >
-          <h4 className={baseHeading}>{chatbot.title}</h4>
+          <p className={baseHeading}>{chatbot.title}</p>
           <p className={baseText}>{chatbot.description}</p>
         </InfoBox>
       </li>
