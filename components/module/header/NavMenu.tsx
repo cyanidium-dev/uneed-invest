@@ -28,6 +28,7 @@ const NavMenu = ({ isOpen, closeMenu }: NavMenuProps) => {
             variant="transparent"
             className="h-6 min-w-6 rounded-none p-0 xl:hidden"
             onClick={closeMenu}
+            ariaLabel="Закрити меню"
           >
             <CloseIcon />
           </BaseButton>
