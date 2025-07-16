@@ -32,14 +32,14 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         /> */}
-        <link
+        {/* <link
           rel="preload"
           as="image"
           href="/images/hero/hero-bg-mob.webp"
           type="image/webp"
           fetchPriority="high"
           media="(max-width: 1280px)"
-        />
+        /> */}
       </head>
 
       <body className="min-h-screen bg-light font-helvetica text-[14px] text-dark antialiased">

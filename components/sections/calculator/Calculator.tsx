@@ -6,7 +6,7 @@ const Calculator = () => {
   return (
     <section
       id={ROUTES.CALCULATOR.id}
-      className="overflow-hidden bg-accent py-10 text-light xl:py-[47px]"
+      className="scroll-mt-20 overflow-hidden bg-accent py-10 text-light xl:py-[47px]"
     >
       <div className="container relative z-[1] max-w-[500px] xl:max-w-[1280px]">
         <h2 className="mb-4 w-[270px] text-[24px] font-bold uppercase leading-[1.22] xl:mb-[18px] xl:w-[510px] xl:text-[52px]">

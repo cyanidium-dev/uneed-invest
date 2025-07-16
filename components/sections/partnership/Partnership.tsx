@@ -7,7 +7,7 @@ const Partnership = () => {
     <>
       <section
         id={ROUTES.PARTNERSHIP.id}
-        className="relative overflow-hidden bg-dark pt-10 text-light xl:pt-[72px]"
+        className="relative scroll-mt-20 overflow-hidden bg-dark pt-10 text-light xl:pt-[72px]"
       >
         <div className="container relative z-[1] max-w-[450px] xl:max-w-[1280px]">
           <h2 className="mb-10 text-[24px] font-bold uppercase leading-none max-xl:max-w-[320px] xl:mb-[72px] xl:w-[618px] xl:text-[52px] xl:leading-[1.22]">

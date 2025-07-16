@@ -1,11 +1,12 @@
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
+import { ROUTES } from "@/config/routes";
 
 import ReviewList from "./ReviewList";
 
 const Reviews = () => {
   return (
-    <section className="py-10">
+    <section id={ROUTES.REVIEWS.id} className="scroll-mt-20 py-10">
       <div className="container flex max-w-[420px] flex-col gap-[10px] xl:h-[510px] xl:max-w-[1280px] xl:flex-row xl:gap-5">
         <div className="relative">
           <InfoBox

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id={ROUTES.ABOUT.id}
-      className="relative overflow-hidden bg-dark pb-[60px] pt-10 text-light xl:pb-[68px] xl:pt-[95px]"
+      className="relative scroll-mt-20 overflow-hidden bg-dark pb-[60px] pt-10 text-light xl:pb-[68px] xl:pt-[95px]"
     >
       <div className="container relative z-[1] flex max-w-[500px] flex-col gap-6 xl:max-w-[1280px] xl:flex-row-reverse">
         <div className="flex flex-col xl:mr-auto xl:flex-row-reverse xl:justify-end xl:gap-8">
@@ -28,10 +28,6 @@ const About = () => {
               мережа розумних кімнат для подобової оренди
             </p>
           </div>
-
-          {/* <div className="relative h-[320px] w-full rounded-2xl border-4 border-solid border-accent bg-[url('/images/about/about-top-mob.webp')] bg-cover bg-no-repeat xl:h-[491px] xl:w-[360px] xl:bg-[url('/images/about/about-top-desk.webp')]">
-            <div className="absolute -bottom-[180px] -right-[180px] -z-[1] h-[761px] w-[856px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/about/about-decor-left-desk.webp')]" />
-          </div> */}
 
           <div className="relative h-[320px] w-full rounded-2xl border-4 border-solid border-accent xl:h-[491px] xl:w-[360px]">
             <Image

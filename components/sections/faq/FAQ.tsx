@@ -1,11 +1,15 @@
 import { StarIcon } from "@/components/icons";
 import Marquee from "@/components/shared/marquee/Marquee";
+import { ROUTES } from "@/config/routes";
 
 import FaqList from "./FaqList";
 
 const Faq = () => {
   return (
-    <section className="relative overflow-hidden pb-[113px] pt-10 xl:pb-[197px] xl:pt-[130px]">
+    <section
+      id={ROUTES.FAQ.id}
+      className="relative scroll-mt-20 overflow-hidden pb-[113px] pt-10 xl:pb-[197px] xl:pt-[130px]"
+    >
       <div className="container relative z-[1] max-w-[600px] xl:max-w-[1280px]">
         <div className="relative mb-6 overflow-hidden rounded-full bg-accent px-5 py-6 xl:mb-10 xl:p-11">
           <h2 className="text-[18px] font-bold uppercase leading-[1.2] text-light xl:text-[48px]">

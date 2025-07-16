@@ -7,7 +7,7 @@ const Locations = () => {
   return (
     <section
       id={ROUTES.LOCATIONS.id}
-      className="relative overflow-hidden pb-[104px] pt-[46px] xl:pb-[130px] xl:pt-[206px]"
+      className="relative scroll-mt-20 overflow-hidden pb-[104px] pt-[46px] xl:pb-[130px] xl:pt-[206px]"
     >
       <div className="container relative z-[1] max-w-[500px] xl:max-w-[1280px]">
         <div className="xl:absolute xl:-top-[90px]">
