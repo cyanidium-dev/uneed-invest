@@ -19,55 +19,35 @@ import Hero from "@/components/sections/hero/Hero";
 // import TopCTA from "@/components/sections/topCTA/TopCTA";
 
 const Advantages = dynamic(
-  () => import("@/components/sections/advantages/Advantages"),
-  { ssr: false }
+  () => import("@/components/sections/advantages/Advantages")
 );
-const BotCTA = dynamic(() => import("@/components/sections/botCTA/BotCTA"), {
-  ssr: false,
-});
-const Business = dynamic(
-  () => import("@/components/sections/business/Business"),
-  { ssr: false }
-);
-const Calculator = dynamic(
-  () => import("@/components/sections/calculator/Calculator"),
-  { ssr: false }
-);
+// const BotCTA = dynamic(() => import("@/components/sections/botCTA/BotCTA"));
+// const Business = dynamic(
+//   () => import("@/components/sections/business/Business")
+// );
+// const Calculator = dynamic(
+//   () => import("@/components/sections/calculator/Calculator")
+// );
 const Estimate = dynamic(
-  () => import("@/components/sections/estimate/Estimate"),
-  { ssr: false }
+  () => import("@/components/sections/estimate/Estimate")
 );
-const FAQ = dynamic(() => import("@/components/sections/faq/FAQ"), {
-  ssr: false,
-});
-const Investment = dynamic(
-  () => import("@/components/sections/investment/Investment"),
-  { ssr: false }
-);
+// const FAQ = dynamic(() => import("@/components/sections/faq/FAQ"));
+// const Investment = dynamic(
+//   () => import("@/components/sections/investment/Investment")
+// );
 const Locations = dynamic(
-  () => import("@/components/sections/locations/Locations"),
-  { ssr: false }
+  () => import("@/components/sections/locations/Locations")
 );
-const MidCTA = dynamic(() => import("@/components/sections/midCTA/MidCTA"), {
-  ssr: false,
-});
+// const MidCTA = dynamic(() => import("@/components/sections/midCTA/MidCTA"));
 const Occupancy = dynamic(
-  () => import("@/components/sections/occupancy/Occupancy"),
-  { ssr: false }
+  () => import("@/components/sections/occupancy/Occupancy")
 );
-const Partnership = dynamic(
-  () => import("@/components/sections/partnership/Partnership"),
-  { ssr: false }
-);
-const Reviews = dynamic(() => import("@/components/sections/reviews/Reviews"), {
-  ssr: false,
-});
-const Token = dynamic(() => import("@/components/sections/token/Token"), {
-  ssr: false,
-});
-const TopCTA = dynamic(() => import("@/components/sections/topCTA/TopCTA"), {
-  ssr: false,
-});
+// const Partnership = dynamic(
+//   () => import("@/components/sections/partnership/Partnership")
+// );
+// const Reviews = dynamic(() => import("@/components/sections/reviews/Reviews"));
+// const Token = dynamic(() => import("@/components/sections/token/Token"));
+const TopCTA = dynamic(() => import("@/components/sections/topCTA/TopCTA"));
 
 export default function Home() {
   return (
@@ -79,7 +59,7 @@ export default function Home() {
       <Occupancy />
       <TopCTA />
       <Advantages />
-      <Partnership />
+      {/* <Partnership />
       <Calculator />
       <Business />
       <MidCTA />
@@ -87,7 +67,7 @@ export default function Home() {
       <Investment />
       <Reviews />
       <FAQ />
-      <BotCTA />
+      <BotCTA /> */}
     </>
   );
 }
