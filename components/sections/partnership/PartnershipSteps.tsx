@@ -6,7 +6,7 @@ import { partnershipData } from "@/data/partnershipData";
 
 const PartnershipSteps = () => {
   return (
-    <div className="relative">
+    <div className="relative mx-auto w-[1280px]">
       <ul className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
         {partnershipData.map(({ id, title }) => (
           <li
@@ -38,15 +38,15 @@ const PartnershipSteps = () => {
             )}
           </li>
         ))}
-
-        <Image
-          src="/images/partnership/partnership-decor-desk.svg"
-          alt="Декоративне зображення"
-          width={1300}
-          height={1251}
-          className="absolute -right-[200px] -top-[380px] max-xl:hidden"
-        />
       </ul>
+
+      <Image
+        src="/images/partnership/partnership-decor-desk.svg"
+        alt="Декоративне зображення"
+        width={1300}
+        height={1251}
+        className="absolute -right-[200px] -top-[380px] max-xl:hidden"
+      />
 
       <div className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] xl:hidden">
         <Image
