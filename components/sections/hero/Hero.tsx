@@ -47,22 +47,13 @@ const Hero = () => {
 
       <div className="absolute left-0 top-0 h-full w-full overflow-hidden xl:w-1/2">
         <Image
-          src="/images/hero/hero-bg-mob.webp"
-          alt="Фонове зображення"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="(max-width: 1279px) 100vw, 50vw"
-          className="object-cover object-top xl:hidden"
-        />
-        <Image
           src="/images/hero/hero-bg-desk.webp"
           alt="Фонове зображення"
           fill
           priority
           fetchPriority="high"
-          sizes="(min-width: 1280px) 50vw"
-          className="hidden object-cover xl:block"
+          sizes="(min-width: 1280px) 50vw, 100vw"
+          className="object-cover"
         />
 
         <div className="absolute bottom-0 z-[1] h-[936px] w-[663px] bg-white/[37%] shadow-[inset_0px_3.5px_10.5px_rgba(0,0,0,0.25)] backdrop-blur-[28.7px] [border-radius:50%/50%] max-xl:left-1/2 max-xl:-translate-x-1/2 xl:-bottom-[299px] xl:-right-[88px] xl:h-[935px] xl:w-[948px]" />
