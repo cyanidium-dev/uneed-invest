@@ -25,6 +25,7 @@ const Advantages = () => {
         alt="декоративне зображення"
         width={248}
         height={361}
+        fetchPriority="low"
         className="absolute -top-[250px] left-0 object-cover xl:hidden"
       />
       <Image
@@ -32,6 +33,7 @@ const Advantages = () => {
         alt="декоративне зображення"
         width={233}
         height={490}
+        fetchPriority="low"
         className="absolute bottom-[80px] right-0 object-cover xl:hidden"
       />
       <Image
@@ -39,6 +41,7 @@ const Advantages = () => {
         alt="декоративне зображення"
         width={254}
         height={496}
+        fetchPriority="low"
         className="absolute right-0 top-0 object-cover max-xl:hidden"
       />
     </section>

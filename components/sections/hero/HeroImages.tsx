@@ -45,7 +45,7 @@ const HeroImages = () => {
           src="/images/hero/hero-decor-mob.svg"
           alt="Декоративне зображення"
           width={183}
-          height={380}
+          height={381}
           className="absolute -bottom-[200px] left-0"
           priority
           loading="eager"

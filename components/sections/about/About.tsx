@@ -64,6 +64,7 @@ const About = () => {
             alt="Фото приміщення"
             fill
             sizes="(max-width: 1279px) 450px"
+            fetchPriority="low"
             className="rounded-2xl object-cover xl:hidden"
           />
           <Image
@@ -71,6 +72,7 @@ const About = () => {
             alt="Фото приміщення"
             fill
             sizes="(min-width: 1280px) 555px"
+            fetchPriority="low"
             className="rounded-2xl object-cover max-xl:hidden"
           />
           <StarInfoBox
