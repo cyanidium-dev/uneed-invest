@@ -4,6 +4,8 @@ import { Controller, useFormContext } from "react-hook-form";
 
 import { Input } from "@heroui/input";
 
+import { cn } from "@/utils/cn";
+
 interface IFormFieldProps {
   label: string;
   name: string;
@@ -21,10 +23,21 @@ const FormField = ({ label, name, type }: IFormFieldProps) => {
         <Input
           classNames={{
             base: "relative",
-            label:
-              "text-light font-manrope text-[12px] leading-[20px] font-light group-data-[filled-within=true]:text-light ",
-            inputWrapper: "group-data-[focus=true]:border-accent-light",
-            errorMessage: "absolute -bottom-[8px] left-0 text-[12px] ",
+            label: cn(
+              "text-light font-manrope text-[12px] leading-[20px] font-light group-data-[filled-within=true]:text-light",
+              fieldState.error && "!text-error"
+            ),
+            inputWrapper: cn(
+              "group-data-[focus=true]:border-accent-light",
+              fieldState.error &&
+                "!border-error group-data-[focus=true]:!border-error"
+            ),
+            input: cn(
+              fieldState.error &&
+                "!text-error group-data-[focus=true]:!text-error"
+            ),
+            helperWrapper: "absolute -bottom-[20px] left-0",
+            errorMessage: "text-[12px] text-error",
           }}
           {...field}
           label={label}

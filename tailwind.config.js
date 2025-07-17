@@ -45,6 +45,7 @@ const config = {
         light: "#ffffff",
         accent: "#FF7300",
         "accent-light": "#FF9D4C",
+        error: "#7C0700",
       },
       animation: {
         marquee: "marquee 12s linear infinite",
