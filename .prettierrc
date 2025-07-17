@@ -23,6 +23,7 @@
     "^@/components/(.*)$",
     "^@/lib(.*)$",
     "^@/constants(.*)$",
+    "^@/hooks(.*)$",
     "^@/utils(.*)$",
     "^@/types(.*)$",
     "^@/helpers(.*)$",
