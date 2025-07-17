@@ -5,7 +5,14 @@ const config = {
   content: [
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+    // "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+
+    "./node_modules/@heroui/theme/dist/components/accordion.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/button.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/input.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/link.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/select.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/slider.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
