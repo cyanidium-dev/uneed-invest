@@ -3,8 +3,8 @@
 import { useRef, useState } from "react";
 
 import BaseButton from "@/components/shared/buttons/BaseButton";
-import PresentationForm from "@/components/shared/form/PresentationForm";
-import BaseModal from "@/components/shared/modal/BaseModal";
+import PresentationModal from "@/components/shared/modal/PresentationModal";
+import ResponseModal from "@/components/shared/modal/ResponseModal";
 import { APPLICATION } from "@/constants/application";
 import sendTelegramMessage from "@/services/sendTelegramMessage";
 import { PresentationFormSchema } from "@/schemas/PresentationFormSchema";
@@ -13,16 +13,22 @@ const TriggerPresentationForm = () => {
   const [isError, setIsError] = useState(false);
   const [dialogResetKey, setDialogResetKey] = useState(0);
 
-  const dialogRef = useRef<HTMLDialogElement>(null);
+  const presentationDialogRef = useRef<HTMLDialogElement>(null);
+  const responseDialogRef = useRef<HTMLDialogElement>(null);
 
-  const openDialog = () => {
-    dialogRef.current?.showModal();
+  const openPresentationDialog = () => {
+    presentationDialogRef.current?.showModal();
     document.body.style.overflow = "hidden";
     setDialogResetKey(prev => prev + 1);
   };
 
-  const closeDialog = () => {
-    dialogRef.current?.close();
+  const closePresentationDialog = () => {
+    presentationDialogRef.current?.close();
+    document.body.style.overflow = "";
+  };
+
+  const closeResponseDialog = () => {
+    responseDialogRef.current?.close();
     document.body.style.overflow = "";
   };
 
@@ -37,7 +43,12 @@ const TriggerPresentationForm = () => {
 
     if (success) reset();
 
-    openDialog();
+    closePresentationDialog();
+
+    setTimeout(() => {
+      responseDialogRef.current?.showModal();
+      document.body.style.overflow = "hidden";
+    }, 100);
   };
 
   return (
@@ -45,30 +56,24 @@ const TriggerPresentationForm = () => {
       <BaseButton
         variant="light"
         className="w-full xl:w-[233px]"
-        onClick={openDialog}
+        onClick={openPresentationDialog}
       >
         Отримати презентацію
       </BaseButton>
 
-      <BaseModal dialogRef={dialogRef} onClose={closeDialog}>
-        <div className="h-hull w-full px-7 py-10 text-center">
-          <p
-            id="modal-title"
-            className="mb-3 text-[28px] font-bold uppercase leading-none"
-          >
-            Отримати презентацію
-          </p>
-          <p className="mx-auto mb-7 w-[202px] font-manrope font-light md:w-[250px] md:text-[16px]">
-            Залиште номер телефону для отримання посилання на презентацію
-          </p>
+      <PresentationModal
+        dialogRef={presentationDialogRef}
+        isError={isError}
+        onClose={closePresentationDialog}
+        dialogResetKey={dialogResetKey}
+        handleSubmit={handleSubmit}
+      />
 
-          <PresentationForm
-            onSubmit={handleSubmit}
-            isError={isError}
-            resetTrigger={dialogResetKey}
-          />
-        </div>
-      </BaseModal>
+      <ResponseModal
+        dialogRef={responseDialogRef}
+        onClose={closeResponseDialog}
+        isError={isError}
+      />
     </div>
   );
 };

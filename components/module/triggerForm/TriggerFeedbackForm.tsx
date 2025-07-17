@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 
 import BaseForm from "@/components/shared/form/BaseForm";
-import FeedbackModal from "@/components/shared/modal/FeedbackModal";
+import ResponseModal from "@/components/shared/modal/ResponseModal";
 import { APPLICATION } from "@/constants/application";
 import sendTelegramMessage from "@/services/sendTelegramMessage";
 import { FullFeedbackFormSchema } from "@/schemas/FullFeedbackFormSchema";
@@ -45,7 +45,7 @@ const TriggerFeedbackForm = ({ isFullForm }: ITriggerFeedbackFormProps) => {
     <div>
       <BaseForm onSubmit={handleSubmit} isFullForm={isFullForm} />
 
-      <FeedbackModal
+      <ResponseModal
         dialogRef={dialogRef}
         onClose={closeDialog}
         isError={isError}

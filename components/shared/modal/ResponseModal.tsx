@@ -3,17 +3,17 @@ import Image from "next/image";
 
 import BaseModal from "./BaseModal";
 
-interface IFeedbackModalProps {
+interface IResponseModalProps {
   onClose: () => void;
   dialogRef: RefObject<HTMLDialogElement>;
   isError: boolean;
 }
 
-const FeedbackModal = ({
+const ResponseModal = ({
   dialogRef,
   onClose,
   isError,
-}: IFeedbackModalProps) => {
+}: IResponseModalProps) => {
   const title = isError ? "Упс!" : "Дякуємо!";
   const description = isError
     ? "Щось пішло не за планом! Спробуйте пізніше"
@@ -54,4 +54,4 @@ const FeedbackModal = ({
   );
 };
 
-export default FeedbackModal;
+export default ResponseModal;
