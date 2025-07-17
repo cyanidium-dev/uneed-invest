@@ -1,12 +1,15 @@
+import { ApplicationType } from "@/constants/application";
+
 export async function POST(req: Request): Promise<Response> {
   try {
     const body = (await req.json()) as {
-      name: string;
+      name?: string;
       phone: string;
       message?: string;
+      messageFrom: ApplicationType;
     };
 
-    const { name, phone, message } = body;
+    const { name, phone, message, messageFrom } = body;
 
     const token = process.env.TELEGRAM_BOT_TOKEN;
     const chatId = process.env.TELEGRAM_CHAT_ID;
@@ -21,7 +24,8 @@ export async function POST(req: Request): Promise<Response> {
     }
 
     let text = `
-👤 Имя: ${name}
+💬 ${messageFrom}:
+👤 Имя: ${name ? name : "-"}
 📞 Телефон: ${phone}
     `.trim();
 

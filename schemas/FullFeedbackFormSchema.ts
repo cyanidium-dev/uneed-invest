@@ -13,7 +13,7 @@ import {
 } from "./validationMessages";
 
 const useFullFeedbackFormSchema = () => {
-  const feedbackFormSchema = z.object({
+  const fullFeedbackFormSchema = z.object({
     name: z
       .string()
       .min(2, NAME_LENGTH_VALIDATION)
@@ -27,7 +27,7 @@ const useFullFeedbackFormSchema = () => {
     message: z.string().max(1000, MESSAGE_LENGTH_VALIDATION).optional(),
   });
 
-  return feedbackFormSchema;
+  return fullFeedbackFormSchema;
 };
 
 export type FullFeedbackFormSchema = z.infer<

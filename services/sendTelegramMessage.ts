@@ -1,7 +1,10 @@
+import { ApplicationType } from "@/constants/application";
+
 export interface TelegramFormData {
-  name: string;
+  name?: string;
   phone: string;
   message?: string;
+  messageFrom: ApplicationType;
 }
 
 const sendTelegramMessage = async (
