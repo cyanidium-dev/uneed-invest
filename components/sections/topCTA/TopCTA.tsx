@@ -1,7 +1,7 @@
 import Image from "next/image";
 
+import TriggerFeedbackForm from "@/components/module/triggerForm/TriggerFeedbackForm";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
-import BaseForm from "@/components/shared/form/BaseForm";
 
 const TopCTA = () => {
   return (
@@ -18,7 +18,7 @@ const TopCTA = () => {
           </p>
         </div>
 
-        <BaseForm />
+        <TriggerFeedbackForm />
 
         <div className="absolute -top-[112px] left-0 flex h-[610px] w-[742px] items-end max-xl:hidden">
           <Image

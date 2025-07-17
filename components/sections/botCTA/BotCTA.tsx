@@ -1,7 +1,7 @@
 import Image from "next/image";
 
+import TriggerFeedbackForm from "@/components/module/triggerForm/TriggerFeedbackForm";
 import Star from "@/components/shared/decor/Star";
-import BaseForm from "@/components/shared/form/BaseForm";
 
 const BotCTA = () => {
   return (
@@ -16,7 +16,7 @@ const BotCTA = () => {
           </p>
         </div>
 
-        <BaseForm isFullForm />
+        <TriggerFeedbackForm isFullForm />
 
         <div className="absolute -top-[69px] left-0 flex h-[647px] w-[742px] items-end rounded-r-xl max-xl:hidden">
           <Image

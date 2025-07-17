@@ -6,7 +6,7 @@ import { partnershipData } from "@/data/partnershipData";
 
 const PartnershipSteps = () => {
   return (
-    <div className="relative mx-auto w-[1280px]">
+    <div className="relative mx-auto max-w-[1280px]">
       <ul className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
         {partnershipData.map(({ id, title }) => (
           <li

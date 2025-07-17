@@ -4,7 +4,6 @@ import { FormProvider, useForm } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import sendTelegramMessage from "@/services/sendTelegramMessage";
 import useFullFeedbackFormSchema, {
   FullFeedbackFormSchema,
 } from "@/schemas/FullFeedbackFormSchema";
@@ -16,9 +15,10 @@ import TextareaField from "./TextareaField";
 
 interface IBaseFormProps {
   isFullForm?: boolean;
+  onSubmit: (data: FullFeedbackFormSchema, reset: () => void) => Promise<void>;
 }
 
-const BaseForm = ({ isFullForm = false }: IBaseFormProps) => {
+const BaseForm = ({ isFullForm = false, onSubmit }: IBaseFormProps) => {
   const validationSchema = useFullFeedbackFormSchema();
 
   const methods = useForm<FullFeedbackFormSchema>({
@@ -32,20 +32,10 @@ const BaseForm = ({ isFullForm = false }: IBaseFormProps) => {
     formState: { isSubmitting },
   } = methods;
 
-  const onSubmit = async (data: FullFeedbackFormSchema) => {
-    const success = await sendTelegramMessage(data);
-
-    if (success) {
-      reset();
-    } else {
-      alert("Помилка під час відправки");
-    }
-  };
-
   return (
     <FormProvider {...methods}>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit(data => onSubmit(data, reset))}
         className="flex w-full flex-col gap-4 max-xl:mx-auto xl:ml-auto xl:w-[365px] xl:gap-5"
       >
         <FormField name="name" type="text" label="Ім’я та прізвище" />
