@@ -1,3 +1,4 @@
+import TriggerPresentationForm from "@/components/module/triggerForm/TriggerPresentationForm";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 import Marquee from "@/components/shared/marquee/Marquee";
@@ -28,9 +29,8 @@ const Hero = () => {
             <BaseButton variant="accent" className="xl:w-[204px]">
               Стати партнером
             </BaseButton>
-            <BaseButton variant="light" className="xl:w-[233px]">
-              Отримати презентацію
-            </BaseButton>
+
+            <TriggerPresentationForm />
           </div>
         </div>
 

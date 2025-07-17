@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 
 import BaseForm from "@/components/shared/form/BaseForm";
 import FeedbackModal from "@/components/shared/modal/FeedbackModal";
+import { APPLICATION } from "@/constants/application";
 import sendTelegramMessage from "@/services/sendTelegramMessage";
 import { FullFeedbackFormSchema } from "@/schemas/FullFeedbackFormSchema";
 
@@ -30,7 +31,8 @@ const TriggerFeedbackForm = ({ isFullForm }: ITriggerFeedbackFormProps) => {
     data: FullFeedbackFormSchema,
     reset: () => void
   ) => {
-    const success = await sendTelegramMessage(data);
+    const fullData = { ...data, messageFrom: APPLICATION.FORM };
+    const success = await sendTelegramMessage(fullData);
 
     setIsError(!success);
 

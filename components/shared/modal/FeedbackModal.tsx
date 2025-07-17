@@ -21,7 +21,7 @@ const FeedbackModal = ({
 
   return (
     <BaseModal dialogRef={dialogRef} onClose={onClose}>
-      <div className="h-hull w-full text-center">
+      <div className="h-hull w-full pt-9 text-center md:pt-10">
         <p
           id="modal-title"
           className="mb-3 text-[28px] font-bold uppercase leading-none"
