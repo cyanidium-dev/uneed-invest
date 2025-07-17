@@ -32,9 +32,9 @@ const HeroImages = () => {
               alt="Декоративне зображення"
               fill
               sizes="799px"
-              priority
-              fetchPriority="high"
-              loading="eager"
+              priority={isDesktop}
+              fetchPriority={isDesktop ? "high" : "auto"}
+              loading={isDesktop ? "eager" : "lazy"}
             />
           </div>
         )}
@@ -47,9 +47,9 @@ const HeroImages = () => {
           width={183}
           height={381}
           className="absolute -bottom-[200px] left-0"
-          priority
-          loading="eager"
-          fetchPriority="high"
+          priority={!isDesktop}
+          fetchPriority={!isDesktop ? "high" : "auto"}
+          loading={!isDesktop ? "eager" : "lazy"}
         />
       )}
 
@@ -60,9 +60,9 @@ const HeroImages = () => {
           width={378}
           height={356}
           className="absolute right-0 top-0"
-          priority
-          loading="eager"
-          fetchPriority="high"
+          priority={isDesktop}
+          fetchPriority={isDesktop ? "high" : "auto"}
+          loading={isDesktop ? "eager" : "lazy"}
         />
       )}
     </>
