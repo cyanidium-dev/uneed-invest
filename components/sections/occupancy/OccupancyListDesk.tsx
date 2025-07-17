@@ -34,8 +34,25 @@ const OccupancyListDesk = () => {
         >
           <p className={cn(baseHeading, "w-[127px]")}>{publicity.title}</p>
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
-          <div className="absolute right-0 top-0 h-[128px] w-[155px] bg-[url('/images/occupancy/occupancy-2-decor-top.webp')] bg-cover bg-no-repeat" />
-          <div className="absolute bottom-0 right-0 h-[90px] w-[199px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />
+          <div className="absolute right-0 top-0 h-[128px] w-[155px]">
+            <Image
+              src="/images/occupancy/occupancy-2-decor-top.webp"
+              alt="Декор верх occupancy"
+              fill
+              sizes="155px"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 right-0 h-[90px] w-[199px]">
+            <Image
+              src="/images/occupancy/occupancy-2-decor-bot.webp"
+              alt="Декор низ occupancy"
+              fill
+              sizes="199px"
+              className="object-cover"
+            />
+          </div>
         </InfoBox>
 
         <Image

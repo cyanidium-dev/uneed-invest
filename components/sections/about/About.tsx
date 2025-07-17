@@ -45,7 +45,14 @@ const About = () => {
               className="hidden object-cover xl:block"
             />
 
-            <div className="absolute -bottom-[180px] -right-[180px] -z-[1] h-[761px] w-[856px] bg-cover bg-no-repeat max-xl:hidden xl:bg-[url('/images/about/about-decor-left-desk.svg')]" />
+            <div className="absolute -bottom-[180px] -right-[180px] -z-[1] h-[761px] w-[856px] object-cover max-xl:hidden">
+              <Image
+                src="/images/about/about-decor-left-desk.svg"
+                alt="Декоративне зображення"
+                fill
+                sizes="856px"
+              />
+            </div>
           </div>
         </div>
 

@@ -31,8 +31,21 @@ const OccupancyListMob = () => {
         <InfoBox variant="dark" className={baseBox}>
           <p className={cn(baseHeading, "w-[127px]")}>{publicity.title}</p>
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
-          <div className="absolute right-0 top-0 h-[117px] w-[141px] bg-[url('/images/occupancy/occupancy-2-decor-top.webp')] bg-cover bg-no-repeat" />
-          <div className="absolute bottom-0 right-0 h-[82px] w-[181px] bg-[url('/images/occupancy/occupancy-2-decor-bot.webp')] bg-cover bg-no-repeat" />
+          <Image
+            src="/images/occupancy/occupancy-2-decor-top.webp"
+            alt="Декоративне зображення"
+            width={141}
+            height={117}
+            className="absolute right-0 top-0 object-cover"
+          />
+
+          <Image
+            src="/images/occupancy/occupancy-2-decor-bot.webp"
+            alt="Декоративне зображення"
+            width={181}
+            height={82}
+            className="absolute bottom-0 right-0 object-cover"
+          />
         </InfoBox>
       </li>
 
