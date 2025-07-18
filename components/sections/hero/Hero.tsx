@@ -1,7 +1,6 @@
 import TriggerPartnershipForm from "@/components/module/triggerForm/TriggerPartnershipForm";
 import TriggerPresentationForm from "@/components/module/triggerForm/TriggerPresentationForm";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
-import BaseButton from "@/components/shared/buttons/BaseButton";
 import Marquee from "@/components/shared/marquee/Marquee";
 import { cn } from "@/utils/cn";
 
@@ -27,10 +26,6 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col gap-3 xl:flex-row xl:justify-between">
-            {/* <BaseButton variant="accent" className="xl:w-[204px]">
-              Стати партнером
-            </BaseButton> */}
-
             <TriggerPartnershipForm />
 
             <TriggerPresentationForm />
