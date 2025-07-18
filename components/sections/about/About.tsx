@@ -1,7 +1,9 @@
 import Image from "next/image";
 
 import { Logo } from "@/components/icons";
+import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
+import { fadeInAnimation } from "@/helpers/animation";
 import { ROUTES } from "@/config/routes";
 
 import AboutAdvantages from "./AboutAdvantages";
@@ -14,7 +16,10 @@ const About = () => {
     >
       <div className="container relative z-[1] flex max-w-[500px] flex-col gap-6 xl:max-w-[1280px] xl:flex-row-reverse">
         <div className="flex flex-col xl:mr-auto xl:flex-row-reverse xl:justify-end xl:gap-8">
-          <div className="mb-[38px] flex w-[210px] flex-col gap-6 xl:w-[310px] xl:gap-9">
+          <AnimatedWrapper
+            animation={fadeInAnimation({ x: -50 })}
+            className="mb-[38px] flex w-[210px] flex-col gap-6 xl:w-[310px] xl:gap-9"
+          >
             <h2 className="text-[36px] font-bold uppercase leading-none xl:text-[52px]">
               Що таке
               <span className="flex items-end gap-2 leading-none">
@@ -27,9 +32,12 @@ const About = () => {
             <p className="font-manrope text-[14px] font-light leading-[1.22] xl:text-[20px]">
               мережа розумних кімнат для подобової оренди
             </p>
-          </div>
+          </AnimatedWrapper>
 
-          <div className="relative h-[320px] w-full rounded-2xl border-4 border-solid border-accent xl:h-[491px] xl:w-[360px]">
+          <AnimatedWrapper
+            animation={fadeInAnimation({ y: 50, delay: 0.3 })}
+            className="relative -z-[1] h-[320px] w-full rounded-2xl border-4 border-solid border-accent xl:h-[491px] xl:w-[360px]"
+          >
             <Image
               src="/images/about/about-top-mob.webp"
               alt="Фото приміщення"
@@ -53,12 +61,15 @@ const About = () => {
                 sizes="856px"
               />
             </div>
-          </div>
+          </AnimatedWrapper>
         </div>
 
         <AboutAdvantages />
 
-        <div className="relative h-[210px] w-full rounded-2xl border-4 border-solid border-accent max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]">
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: 50, delay: 0.9 })}
+          className="relative h-[210px] w-full rounded-3xl border-4 border-solid border-accent max-xl:mb-6 xl:absolute xl:-bottom-[89px] xl:-right-[31px] xl:h-[364px] xl:w-[555px]"
+        >
           <Image
             src="/images/about/about-bot-mob.webp"
             alt="Фото приміщення"
@@ -80,30 +91,42 @@ const About = () => {
             starVariant="accent-light"
             boxClassName="absolute -bottom-[4px] -left-[4px] w-[calc(100%+8px)] xl:bottom-[17px] xl:w-[418px] xl:left-[106px]"
           />
-        </div>
+        </AnimatedWrapper>
       </div>
 
-      <Image
-        src="/images/about/about-decor-top-mob.svg"
-        alt="Декоративне зображення"
-        width={303}
-        height={557}
+      <AnimatedWrapper
+        animation={fadeInAnimation({ scale: 0.8 })}
         className="absolute right-0 top-0 xl:hidden"
-      />
-      <Image
-        src="/images/about/about-decor-bot-mob.svg"
-        alt="Декоративне зображення"
-        width={360}
-        height={676}
+      >
+        <Image
+          src="/images/about/about-decor-top-mob.svg"
+          alt="Декоративне зображення"
+          width={303}
+          height={557}
+        />
+      </AnimatedWrapper>
+      <AnimatedWrapper
+        animation={fadeInAnimation({ scale: 0.8 })}
         className="absolute bottom-0 left-0 xl:hidden"
-      />
-      <Image
-        src="/images/about/about-decor-right-desk.svg"
-        alt="Декоративне зображення"
-        width={460}
-        height={636}
+      >
+        <Image
+          src="/images/about/about-decor-bot-mob.svg"
+          alt="Декоративне зображення"
+          width={360}
+          height={676}
+        />
+      </AnimatedWrapper>
+      <AnimatedWrapper
+        animation={fadeInAnimation({ scale: 0.8, delay: 0.4 })}
         className="absolute bottom-0 right-0 max-xl:hidden"
-      />
+      >
+        <Image
+          src="/images/about/about-decor-right-desk.svg"
+          alt="Декоративне зображення"
+          width={460}
+          height={636}
+        />
+      </AnimatedWrapper>
     </section>
   );
 };
