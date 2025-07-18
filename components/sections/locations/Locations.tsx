@@ -40,7 +40,7 @@ const Locations = () => {
       </div>
 
       <AnimatedWrapper
-        animation={fadeInAnimation({ scale: 0.8, delay: 0.5 })}
+        animation={fadeInAnimation({ x: -50, scale: 0.8, delay: 0.5 })}
         className="absolute bottom-[200px] left-0 xl:hidden"
       >
         <Image
@@ -62,7 +62,7 @@ const Locations = () => {
         />
       </AnimatedWrapper>
       <AnimatedWrapper
-        animation={fadeInAnimation({ scale: 0.8, delay: 0.8 })}
+        animation={fadeInAnimation({ x: -50, scale: 0.8, delay: 0.8 })}
         className="absolute bottom-[47px] left-0 max-xl:hidden"
       >
         <Image
