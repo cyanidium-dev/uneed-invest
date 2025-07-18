@@ -14,14 +14,12 @@ import Loader from "../loader/Loader";
 import FormField from "./FormField";
 
 interface IPresentationFormProps {
-  isError: boolean;
   onSubmit: (data: PresentationFormSchema, reset: () => void) => Promise<void>;
   resetTrigger: number;
 }
 
 const PresentationForm = ({
   onSubmit,
-  isError,
   resetTrigger,
 }: IPresentationFormProps) => {
   const validationSchema = usePresentationFormSchema();

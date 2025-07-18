@@ -63,7 +63,6 @@ const TriggerPresentationForm = () => {
 
       <PresentationModal
         dialogRef={presentationDialogRef}
-        isError={isError}
         onClose={closePresentationDialog}
         dialogResetKey={dialogResetKey}
         handleSubmit={handleSubmit}

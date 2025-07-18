@@ -10,7 +10,6 @@ import BaseModal from "./BaseModal";
 interface IPresentationModalProps {
   onClose: () => void;
   dialogRef: RefObject<HTMLDialogElement>;
-  isError: boolean;
   dialogResetKey: number;
   handleSubmit: (
     data: PresentationFormSchema,
@@ -21,7 +20,6 @@ interface IPresentationModalProps {
 const PresentationModal = ({
   dialogRef,
   onClose,
-  isError,
   dialogResetKey,
   handleSubmit,
 }: IPresentationModalProps) => {
@@ -40,7 +38,6 @@ const PresentationModal = ({
 
         <PresentationForm
           onSubmit={handleSubmit}
-          isError={isError}
           resetTrigger={dialogResetKey}
         />
       </div>
