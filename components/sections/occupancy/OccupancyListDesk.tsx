@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
 import { cn } from "@/utils/cn";
@@ -11,13 +13,13 @@ const OccupancyListDesk = () => {
   const { chatbot, google, marketing, publicity, reviews } = occupancyData;
 
   return (
-    <ul className="flex flex-col max-xl:hidden xl:gap-5">
-      <li>
+    <AnimatedList className="flex flex-col max-xl:hidden xl:gap-5">
+      <AnimatedListItem className="xl:absolute xl:right-20 xl:top-0">
         <InfoBox
           variant="glass-dark"
           className={cn(
             baseBox,
-            "justify-start bg-contain bg-no-repeat xl:absolute xl:right-20 xl:top-0 xl:h-[272px] xl:w-[455px] xl:p-9"
+            "justify-start bg-contain bg-no-repeat xl:h-[272px] xl:w-[455px] xl:p-9"
           )}
         >
           <p className={baseHeading}>{marketing.title}</p>
@@ -25,9 +27,9 @@ const OccupancyListDesk = () => {
 
           <div className="absolute bottom-0 left-1/2 w-[92.5%] -translate-x-1/2 bg-[url('/images/occupancy/occupancy-1.webp')] bg-cover bg-no-repeat xl:h-[106px]" />
         </InfoBox>
-      </li>
+      </AnimatedListItem>
 
-      <li className="flex gap-5">
+      <AnimatedListItem className="flex gap-5 xl:mt-5">
         <InfoBox
           variant="dark"
           className={cn(baseBox, "xl:h-[219px] xl:w-[360px]")}
@@ -77,9 +79,9 @@ const OccupancyListDesk = () => {
             starVariant="dark"
           />
         </InfoBox>
-      </li>
+      </AnimatedListItem>
 
-      <li className="flex gap-5">
+      <AnimatedListItem className="flex gap-5">
         <Image
           src="/images/occupancy/occupancy-5-desk.webp"
           alt="Фото приміщення"
@@ -103,8 +105,8 @@ const OccupancyListDesk = () => {
           <p className={baseHeading}>{chatbot.title}</p>
           <p className={baseText}>{chatbot.description}</p>
         </InfoBox>
-      </li>
-    </ul>
+      </AnimatedListItem>
+    </AnimatedList>
   );
 };
 export default OccupancyListDesk;
