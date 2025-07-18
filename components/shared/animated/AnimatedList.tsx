@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 import { Variants, motion } from "framer-motion";
 
-import { fadeInAnimation } from "@/helpers/animation";
+import { listVariants } from "@/helpers/animation";
 
 import AnimatedWrapper from "./AnimatedWrapper";
 
@@ -19,7 +19,7 @@ interface AnimatedListProps {
 
 const AnimatedList = ({
   className = "",
-  animation = fadeInAnimation({}),
+  animation = listVariants({ staggerChildren: 0.5 }),
   viewport = { once: true, amount: 0.3 },
   initial = "hidden",
   animate,
