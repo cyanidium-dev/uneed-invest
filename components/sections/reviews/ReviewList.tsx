@@ -1,13 +1,15 @@
 import Image from "next/image";
 
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
 import { cn } from "@/utils/cn";
 import { reviewData } from "@/data/reviewData";
 
 const ReviewList = () => {
   return (
-    <ul className="flex h-[340px] gap-[10px] xl:h-full xl:gap-5">
+    <AnimatedList className="flex h-[340px] gap-[10px] xl:h-full xl:gap-5">
       {reviewData.map(({ imgSrc, name, text }, index) => (
-        <li
+        <AnimatedListItem
           key={index}
           className="relative overflow-hidden rounded-xl max-xl:basis-1/2 xl:w-[265px]"
         >
@@ -36,9 +38,9 @@ const ReviewList = () => {
               {text}
             </p>
           </div>
-        </li>
+        </AnimatedListItem>
       ))}
-    </ul>
+    </AnimatedList>
   );
 };
 
