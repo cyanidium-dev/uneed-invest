@@ -1,11 +1,16 @@
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 import { advantagesData } from "@/data/advantagesData";
 
 const AdvantagesListMob = () => {
   return (
-    <ul className="mx-auto flex flex-col gap-3 xl:hidden">
+    <AnimatedList className="mx-auto flex flex-col gap-3 xl:hidden">
       {advantagesData.map(([first, second], index) => (
-        <li key={index} className="flex w-full gap-3 even:flex-row-reverse">
+        <AnimatedListItem
+          key={index}
+          className="flex w-full gap-3 even:flex-row-reverse"
+        >
           <div className="flex w-full flex-col gap-3">
             <StarInfoBox
               text={first}
@@ -27,9 +32,9 @@ const AdvantagesListMob = () => {
               backgroundImage: `url('/images/advantages/advantages-${index + 1}-mob.webp')`,
             }}
           />
-        </li>
+        </AnimatedListItem>
       ))}
-    </ul>
+    </AnimatedList>
   );
 };
 
