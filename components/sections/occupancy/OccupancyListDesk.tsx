@@ -69,7 +69,7 @@ const OccupancyListDesk = () => {
           variant="dark"
           className={cn(baseBox, "xl:h-[219px] xl:w-[455px]")}
         >
-          <div className="ml-auto w-[160px] text-right">
+          <div className="ml-auto w-[160px] text-right xl:w-[200px]">
             <p className={baseHeading}>{google.title}</p>
             <p className={baseText}>{google.description}</p>
           </div>
