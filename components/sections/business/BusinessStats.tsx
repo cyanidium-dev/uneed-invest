@@ -1,3 +1,5 @@
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
 import InfoBox from "@/components/shared/box/InfoBox";
 import { cn } from "@/utils/cn";
 
@@ -10,8 +12,8 @@ const BusinessStats = () => {
     "font-manrope text-[12px] uppercase xl:text-[16px]";
 
   return (
-    <ul className="relative mb-16 h-[348px] xl:absolute xl:left-[62px] xl:top-[170px]">
-      <li className="absolute left-0 top-0 xl:left-[141px] xl:top-[158px]">
+    <AnimatedList className="relative mb-16 h-[348px] xl:absolute xl:left-[62px] xl:top-[170px]">
+      <AnimatedListItem className="absolute left-0 top-0 xl:left-[141px] xl:top-[158px]">
         <InfoBox
           variant="dark"
           className={cn(baseBoxStyles, "px-5 pb-5 pt-3 xl:p-9")}
@@ -21,9 +23,9 @@ const BusinessStats = () => {
             працюючих об&apos;єктів в Києві
           </span>
         </InfoBox>
-      </li>
+      </AnimatedListItem>
 
-      <li className="absolute right-0 top-[100px] xl:left-[391px] xl:top-3">
+      <AnimatedListItem className="absolute right-0 top-[100px] xl:left-[391px] xl:top-3">
         <InfoBox
           variant="dark"
           className={cn(
@@ -36,9 +38,9 @@ const BusinessStats = () => {
           </span>
           <span className={baseDescriptionStyles}>задоволених клієнтів</span>
         </InfoBox>
-      </li>
+      </AnimatedListItem>
 
-      <li className="absolute left-0 top-[200px] xl:-top-[80px] xl:left-[639px]">
+      <AnimatedListItem className="absolute left-0 top-[200px] xl:-top-[80px] xl:left-[639px]">
         <InfoBox
           variant="dark"
           className={cn(baseBoxStyles, "px-5 pb-5 pt-3 xl:p-9")}
@@ -46,8 +48,8 @@ const BusinessStats = () => {
           <span className={baseValueStyles}>8+</span>
           <span className={baseDescriptionStyles}>років стабільної роботи</span>
         </InfoBox>
-      </li>
-    </ul>
+      </AnimatedListItem>
+    </AnimatedList>
   );
 };
 
