@@ -2,9 +2,13 @@
 
 import Image from "next/image";
 
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
+import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import Circles from "@/components/shared/decor/Circles";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cn } from "@/utils/cn";
+import { fadeInAnimation } from "@/helpers/animation";
 import { partnershipData } from "@/data/partnershipData";
 
 const PartnershipSteps = () => {
@@ -12,9 +16,9 @@ const PartnershipSteps = () => {
 
   return (
     <div className="relative mx-auto max-w-[1280px]">
-      <ul className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
+      <AnimatedList className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
         {partnershipData.map(({ id, title, imgDesk, imgMob }) => (
-          <li
+          <AnimatedListItem
             key={id}
             className={cn(
               "relative z-[1] flex h-[160px] items-center bg-cover bg-no-repeat p-5 font-manrope font-bold uppercase odd:justify-end odd:bg-accent-light even:justify-between even:bg-accent max-xl:odd:text-right xl:h-[558px] xl:w-1/6 xl:flex-col-reverse xl:pb-[72px] xl:pt-10",
@@ -45,26 +49,38 @@ const PartnershipSteps = () => {
                 className="xl:mt-[36px] xl:-rotate-90"
               />
             )}
-          </li>
+          </AnimatedListItem>
         ))}
-      </ul>
+      </AnimatedList>
 
-      <Image
-        src="/images/partnership/partnership-decor-desk.svg"
-        alt="Декоративне зображення"
-        width={1300}
-        height={1251}
+      <AnimatedWrapper
+        animation={fadeInAnimation({ y: 50, scale: 0.8 })}
         className="absolute -right-[200px] -top-[380px] max-xl:hidden"
-      />
+      >
+        <Image
+          src="/images/partnership/partnership-decor-desk.svg"
+          alt="Декоративне зображення"
+          width={1300}
+          height={1251}
+        />
+      </AnimatedWrapper>
 
-      <div className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] xl:hidden">
+      <AnimatedWrapper
+        animation={fadeInAnimation({
+          x: 50,
+          scale: 0.8,
+          delay: 2,
+          duration: 0.5,
+        })}
+        className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] xl:hidden"
+      >
         <Image
           src="/images/partnership/partnership-decor-mob.svg"
           alt="Декоративне зображення"
           fill
           className="object-cover"
         />
-      </div>
+      </AnimatedWrapper>
     </div>
   );
 };
