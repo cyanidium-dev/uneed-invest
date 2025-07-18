@@ -1,3 +1,8 @@
+import { motion } from "framer-motion";
+
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
+import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import InfoBox from "@/components/shared/box/InfoBox";
 import MarkedList from "@/components/shared/list/MarkedList";
 import { tokenICOData } from "@/data/tokenData";
@@ -5,11 +10,14 @@ import { tokenICOData } from "@/data/tokenData";
 const TokenICO = () => {
   return (
     <div>
-      <h2 className="mb-5 text-[32px] font-bold uppercase leading-[1.22] text-accent xl:mb-[63px] xl:text-[50px]">
+      <AnimatedWrapper
+        as={motion.h2}
+        className="mb-5 text-[32px] font-bold uppercase leading-[1.22] text-accent xl:mb-[63px] xl:text-[50px]"
+      >
         Старт ico
-      </h2>
+      </AnimatedWrapper>
 
-      <ul className="flex flex-col gap-4 xl:h-[373px] xl:flex-row xl:gap-5">
+      <AnimatedList className="flex flex-col gap-4 xl:h-[373px] xl:flex-row xl:gap-5">
         {tokenICOData.map(
           ({
             boxVariant,
@@ -19,7 +27,10 @@ const TokenICO = () => {
             markClassName,
             textClassName,
           }) => (
-            <li key={title} className="h-full min-w-0 grow basis-1/3">
+            <AnimatedListItem
+              key={title}
+              className="h-full min-w-0 grow basis-1/3"
+            >
               <InfoBox
                 variant={boxVariant}
                 className="flex h-full flex-col p-5 max-xl:gap-6 xl:p-8"
@@ -37,10 +48,10 @@ const TokenICO = () => {
                   textClassName={textClassName}
                 />
               </InfoBox>
-            </li>
+            </AnimatedListItem>
           )
         )}
-      </ul>
+      </AnimatedList>
     </div>
   );
 };
