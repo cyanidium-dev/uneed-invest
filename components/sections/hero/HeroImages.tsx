@@ -43,6 +43,17 @@ const HeroImages = () => {
               className="h-[936px] w-[663px] bg-white/[37%] shadow-[inset_0px_3.5px_10.5px_rgba(0,0,0,0.25)] backdrop-blur-[28.7px] [border-radius:50%/50%] xl:h-[935px] xl:w-[948px]"
             />
           </div>
+
+          <Image
+            src="/images/hero/hero-gradient.svg"
+            alt="Фоновий градієнт"
+            width={309}
+            height={556}
+            priority
+            fetchPriority="high"
+            loading="eager"
+            className="absolute top-[300px] object-cover max-xl:right-0 max-xl:rotate-180 xl:left-0 xl:top-0"
+          />
         </div>
 
         <AnimatedWrapper
