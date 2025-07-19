@@ -13,6 +13,19 @@ const HeroImages = () => {
     <>
       <div className="absolute left-0 top-0 h-full w-full xl:w-1/2">
         <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
+          <div className="relative h-[640px] w-full md:hidden">
+            <Image
+              src="/images/hero/hero-bg-mob.webp"
+              alt="Фонове зображення"
+              fill
+              priority
+              fetchPriority="high"
+              loading="eager"
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+
           <Image
             src="/images/hero/hero-bg-desk.webp"
             alt="Фонове зображення"
@@ -20,8 +33,8 @@ const HeroImages = () => {
             priority
             fetchPriority="high"
             loading="eager"
-            sizes="(min-width: 1280px) 50vw, 100vw"
-            className="object-cover"
+            sizes="50vw"
+            className="object-cover max-md:hidden"
           />
 
           <div className="absolute bottom-0 z-[1] max-xl:left-1/2 max-xl:-translate-x-1/2 xl:-bottom-[299px] xl:-right-[88px]">

@@ -97,7 +97,7 @@ const About = () => {
       </div>
 
       <AnimatedWrapper
-        animation={fadeInAnimation({ scale: 0.8 })}
+        animation={fadeInAnimation({ x: 50, y: -50, scale: 0.8 })}
         className="absolute right-0 top-0 xl:hidden"
       >
         <Image
@@ -108,7 +108,7 @@ const About = () => {
         />
       </AnimatedWrapper>
       <AnimatedWrapper
-        animation={fadeInAnimation({ scale: 0.8 })}
+        animation={fadeInAnimation({ x: -50, scale: 0.8, delay: 0.6 })}
         className="absolute bottom-0 left-0 xl:hidden"
       >
         <Image
