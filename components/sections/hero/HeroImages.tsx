@@ -44,16 +44,21 @@ const HeroImages = () => {
             />
           </div>
 
-          <Image
-            src="/images/hero/hero-gradient.svg"
-            alt="Фоновий градієнт"
-            width={309}
-            height={556}
-            priority
-            fetchPriority="high"
-            loading="eager"
-            className="absolute top-[300px] object-cover max-xl:right-0 max-xl:rotate-180 xl:left-0 xl:top-0"
-          />
+          <AnimatedWrapper
+            animation={fadeInAnimation({ x: -50, scale: 0.8, delay: 1 })}
+            className="absolute top-[300px] h-[556px] w-[309px] object-cover max-xl:right-0 xl:left-0 xl:top-0"
+          >
+            <Image
+              src="/images/hero/hero-gradient.svg"
+              alt="Фоновий градієнт"
+              width={309}
+              height={556}
+              priority
+              fetchPriority="high"
+              loading="eager"
+              className="object-cover max-xl:rotate-180"
+            />
+          </AnimatedWrapper>
         </div>
 
         <AnimatedWrapper
