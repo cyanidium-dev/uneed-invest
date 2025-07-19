@@ -34,7 +34,7 @@ const HeroImages = () => {
 
         <AnimatedWrapper
           animation={fadeInAnimation({ y: 50, delay: 0.7, scale: 0.8 })}
-          className="absolute -right-[420px] bottom-0 xl:h-[306px] xl:w-[799px]"
+          className="absolute -right-[420px] bottom-0 max-xl:hidden xl:h-[306px] xl:w-[799px]"
         >
           <Image
             src="/images/hero/hero-decor-bot-desk.svg"

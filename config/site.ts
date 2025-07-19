@@ -3,8 +3,12 @@ import { ROUTES } from "./routes";
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Uneed invest | Інвестуйте в мережу подобової оренди житла",
-  description: "Make beautiful websites regardless of your design experience.",
+  seo: {
+    companyName: "Uneed Invest",
+    title: "Інвестуйте в мережу подобової оренди житла",
+    description:
+      "Надійні та прості інвестиції з підтримкою експертів. Почніть заробляти вже сьогодні з Uneed Invest.",
+  },
   navItems: [
     {
       label: ROUTES.ESTIMATE.label,
@@ -56,12 +60,12 @@ export const siteConfig = {
   ],
 
   links: {
-    youtube: "https://www.youtube.com/",
+    youtube: "https://youtube.com/@uneed_group?si=PSA_GRFDdfyyIiJi",
     tikTok: "https://www.tiktok.com/uk-UA/",
   },
 
   contacts: {
-    tel: "+380-97-006-76-56",
-    email: "email@gmail.com",
+    tel: "+380-97-567-55-77",
+    email: "partners@uneedinvest.com",
   },
 };

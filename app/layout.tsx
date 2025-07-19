@@ -1,25 +1,17 @@
 import { Metadata } from "next";
 import { Manrope, Montserrat, Raleway } from "next/font/google";
 
-import { siteConfig } from "@/config/site";
-
 import { Providers } from "./providers";
 
 import "@/styles/globals.css";
 
 import Footer from "@/components/module/footer/Footer";
 import Header from "@/components/module/header/Header";
+import { generatePageMetadata } from "@/utils/generatePageMetadata";
 
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata();
+}
 
 export const manrope = Manrope({
   subsets: ["latin"],
