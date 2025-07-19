@@ -9,7 +9,7 @@ const FooterCopyright = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="md:flex md:flex-row-reverse md:items-center md:justify-between">
+    <div className="overflow-hidden md:flex md:flex-row-reverse md:items-center md:justify-between">
       <AnimatedWrapper
         animation={fadeInAnimation({ x: 50, delay: 0.9 })}
         className="max-md:mb-10"
