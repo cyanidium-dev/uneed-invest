@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { BurgerIcon, Logo } from "@/components/icons";
 import Backdrop from "@/components/shared/backdrop/Backdrop";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 
-import NavMenu from "./NavMenu";
+// import NavMenu from "./NavMenu";
+
+const NavMenu = dynamic(() => import("./NavMenu"), { ssr: false });
 
 const Header = () => {
   const [isNavMenuOpened, setIsNavMenuOpened] = useState(false);

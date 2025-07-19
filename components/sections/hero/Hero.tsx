@@ -1,5 +1,7 @@
-import TriggerPartnershipForm from "@/components/module/triggerForm/TriggerPartnershipForm";
-import TriggerPresentationForm from "@/components/module/triggerForm/TriggerPresentationForm";
+// import TriggerPartnershipForm from "@/components/module/triggerForm/TriggerPartnershipForm";
+// import TriggerPresentationForm from "@/components/module/triggerForm/TriggerPresentationForm";
+import dynamic from "next/dynamic";
+
 import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import StarInfoBox from "@/components/shared/box/StarInfoBox";
 import Marquee from "@/components/shared/marquee/Marquee";
@@ -8,6 +10,13 @@ import { fadeInAnimation } from "@/helpers/animation";
 
 import HeroImages from "./HeroImages";
 import HeroInvestment from "./HeroInvestment";
+
+const TriggerPartnershipForm = dynamic(
+  () => import("@/components/module/triggerForm/TriggerPartnershipForm")
+);
+const TriggerPresentationForm = dynamic(
+  () => import("@/components/module/triggerForm/TriggerPresentationForm")
+);
 
 const Hero = () => {
   return (
