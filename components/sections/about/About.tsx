@@ -36,24 +36,26 @@ const About = () => {
 
           <AnimatedWrapper
             animation={fadeInAnimation({ y: 50, delay: 0.3 })}
-            className="relative -z-[1] h-[320px] w-full rounded-2xl border-4 border-solid border-accent xl:h-[491px] xl:w-[360px]"
+            className="relative -z-[1]"
           >
-            <Image
-              src="/images/about/about-top-mob.webp"
-              alt="Фото приміщення"
-              fill
-              sizes="(max-width: 1280px) 100vw, 360px"
-              className="object-cover xl:hidden"
-            />
-            <Image
-              src="/images/about/about-top-desk.webp"
-              alt="Фото приміщення"
-              fill
-              sizes="(min-width: 1280px) 360px"
-              className="hidden object-cover xl:block"
-            />
+            <div className="relative h-[320px] w-full rounded-2xl border-4 border-solid border-accent xl:h-[491px] xl:w-[360px]">
+              <Image
+                src="/images/about/about-top-mob.webp"
+                alt="Фото приміщення"
+                fill
+                sizes="(max-width: 1280px) 100vw, 360px"
+                className="rounded-xl object-cover xl:hidden"
+              />
+              <Image
+                src="/images/about/about-top-desk.webp"
+                alt="Фото приміщення"
+                fill
+                sizes="(min-width: 1280px) 360px"
+                className="hidden object-cover xl:block"
+              />
+            </div>
 
-            <div className="absolute -bottom-[180px] -right-[180px] -z-[1] h-[761px] w-[856px] object-cover max-xl:hidden">
+            <div className="absolute -bottom-[95px] -right-[180px] -z-[1] h-[761px] w-[856px] object-cover max-xl:hidden">
               <Image
                 src="/images/about/about-decor-left-desk.svg"
                 alt="Декоративне зображення"

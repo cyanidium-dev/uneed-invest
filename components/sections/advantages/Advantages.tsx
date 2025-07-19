@@ -29,7 +29,7 @@ const Advantages = () => {
       <Marquee className="absolute bottom-0 left-0" />
 
       <Image
-        src="/images/advantages/advantages-decor-top-mob.webp"
+        src="/images/advantages/advantages-decor-top-mob.svg"
         alt="декоративне зображення"
         width={248}
         height={361}
@@ -41,7 +41,7 @@ const Advantages = () => {
         className="absolute bottom-[80px] right-0 object-cover xl:hidden"
       >
         <Image
-          src="/images/advantages/advantages-decor-bot-mob.webp"
+          src="/images/advantages/advantages-decor-bot-mob.svg"
           alt="декоративне зображення"
           width={233}
           height={490}
@@ -53,7 +53,7 @@ const Advantages = () => {
         className="absolute right-0 top-0 object-cover max-xl:hidden"
       >
         <Image
-          src="/images/advantages/advantages-decor-desk.webp"
+          src="/images/advantages/advantages-decor-desk.svg"
           alt="декоративне зображення"
           width={254}
           height={496}

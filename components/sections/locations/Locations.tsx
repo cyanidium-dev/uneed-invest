@@ -44,7 +44,7 @@ const Locations = () => {
         className="absolute bottom-[200px] left-0 xl:hidden"
       >
         <Image
-          src="/images/locations/locations-decor-mob.webp"
+          src="/images/locations/locations-decor-mob.svg"
           alt="Декоративне зображення"
           width={222}
           height={345}
@@ -55,7 +55,7 @@ const Locations = () => {
         className="absolute left-1/4 top-[265px] max-xl:hidden"
       >
         <Image
-          src="/images/locations/locations-decor-top-desk.webp"
+          src="/images/locations/locations-decor-top-desk.svg"
           alt="Декоративне зображення"
           width={402}
           height={293}
@@ -66,7 +66,7 @@ const Locations = () => {
         className="absolute bottom-[47px] left-0 max-xl:hidden"
       >
         <Image
-          src="/images/locations/locations-decor-bot-desk.webp"
+          src="/images/locations/locations-decor-bot-desk.svg"
           alt="Декоративне зображення"
           width={347}
           height={441}

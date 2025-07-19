@@ -30,7 +30,7 @@ const Occupancy = () => {
         className="absolute -bottom-[30px] left-1/4 max-xl:hidden"
       >
         <Image
-          src="/images/occupancy/occupancy-decor-desk.webp"
+          src="/images/occupancy/occupancy-decor-desk.svg"
           alt="Декоративне зображення"
           width={482}
           height={417}

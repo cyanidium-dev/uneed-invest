@@ -38,7 +38,7 @@ const OccupancyListDesk = () => {
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
           <div className="absolute right-0 top-0 h-[128px] w-[155px]">
             <Image
-              src="/images/occupancy/occupancy-2-decor-top.webp"
+              src="/images/occupancy/occupancy-2-decor-top.svg"
               alt="Декор верх occupancy"
               fill
               sizes="155px"
@@ -48,7 +48,7 @@ const OccupancyListDesk = () => {
 
           <div className="absolute bottom-0 right-0 h-[90px] w-[199px]">
             <Image
-              src="/images/occupancy/occupancy-2-decor-bot.webp"
+              src="/images/occupancy/occupancy-2-decor-bot.svg"
               alt="Декор низ occupancy"
               fill
               sizes="199px"

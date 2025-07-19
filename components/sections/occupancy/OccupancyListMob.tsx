@@ -34,7 +34,7 @@ const OccupancyListMob = () => {
           <p className={cn(baseHeading, "w-[127px]")}>{publicity.title}</p>
           <p className={cn(baseText, "w-[180px]")}>{publicity.description}</p>
           <Image
-            src="/images/occupancy/occupancy-2-decor-top.webp"
+            src="/images/occupancy/occupancy-2-decor-top.svg"
             alt="Декоративне зображення"
             width={141}
             height={117}
@@ -42,7 +42,7 @@ const OccupancyListMob = () => {
           />
 
           <Image
-            src="/images/occupancy/occupancy-2-decor-bot.webp"
+            src="/images/occupancy/occupancy-2-decor-bot.svg"
             alt="Декоративне зображення"
             width={181}
             height={82}
