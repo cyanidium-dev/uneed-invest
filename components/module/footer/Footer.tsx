@@ -17,7 +17,11 @@ const Footer = () => {
       <div className="container max-w-[1280px] md:max-w-[800px] xl:max-w-[1280px]">
         <div className="md:mb-10 xl:flex xl:justify-between">
           <AnimatedWrapper animation={fadeInAnimation({ x: -50 })}>
-            <Link href="/" className="cursor-pointer">
+            <Link
+              href="/"
+              className="cursor-pointer"
+              aria-label="Логотип компанії"
+            >
               <Logo className="mb-[60px] w-[171px] xl:-mt-2" />
             </Link>
           </AnimatedWrapper>
