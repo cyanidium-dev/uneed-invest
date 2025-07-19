@@ -39,6 +39,7 @@ const LocationList = () => {
                   href={href}
                   variant="footer-nav"
                   className="absolute bottom-5 right-5 size-8 rounded-full bg-light p-[6px] xl:bottom-[44.5px] xl:right-6 xl:size-[78px] xl:p-6"
+                  ariaLabel="Посилання на гугл карту"
                 >
                   <ArrowIcon className="size-5 xl:bottom-[44.5px] xl:size-[78px]" />
                 </BaseButton>
