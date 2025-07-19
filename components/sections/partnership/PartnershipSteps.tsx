@@ -8,7 +8,7 @@ import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import Circles from "@/components/shared/decor/Circles";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cn } from "@/utils/cn";
-import { fadeInAnimation } from "@/helpers/animation";
+import { fadeInAnimation, listVariants } from "@/helpers/animation";
 import { partnershipData } from "@/data/partnershipData";
 
 const PartnershipSteps = () => {
@@ -16,7 +16,10 @@ const PartnershipSteps = () => {
 
   return (
     <div className="relative mx-auto max-w-[1280px]">
-      <AnimatedList className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row">
+      <AnimatedList
+        animation={listVariants({ staggerChildren: 0.3 })}
+        className="relative mx-auto flex max-w-[450px] flex-col xl:max-w-[1280px] xl:flex-row"
+      >
         {partnershipData.map(({ id, title, imgDesk, imgMob }) => (
           <AnimatedListItem
             key={id}
@@ -54,7 +57,7 @@ const PartnershipSteps = () => {
       </AnimatedList>
 
       <AnimatedWrapper
-        animation={fadeInAnimation({ y: 50, scale: 0.8 })}
+        animation={fadeInAnimation({ y: 50, scale: 0.8, delay: 0.5 })}
         className="absolute -right-[200px] -top-[380px] max-xl:hidden"
       >
         <Image
@@ -69,7 +72,7 @@ const PartnershipSteps = () => {
         animation={fadeInAnimation({
           x: 50,
           scale: 0.8,
-          delay: 2,
+          delay: 0.5,
           duration: 0.5,
         })}
         className="absolute -right-[200px] -top-[180px] h-[520px] w-[539px] xl:hidden"

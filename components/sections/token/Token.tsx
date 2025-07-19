@@ -44,6 +44,7 @@ const Token = () => {
             src="/images/token/token-decor-top-mob.svg"
             alt="Декоративне зображення"
             fill
+            sizes="1047px"
             className="object-cover"
           />
         </AnimatedWrapper>

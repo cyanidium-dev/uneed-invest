@@ -100,8 +100,8 @@ const Investment = () => {
       </div>
 
       <AnimatedWrapper
-        animation={fadeInAnimation({ x: 50, scale: 0.8, delay: 1 })}
-        className="absolute right-0 top-0 hidden max-xl:hidden xl:block"
+        animation={fadeInAnimation({ delay: 1 })}
+        className="absolute right-0 top-0 max-xl:hidden"
       >
         <Image
           src="/images/investment/investment-gradient-desk.svg"

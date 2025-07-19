@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import AnimatedList from "@/components/shared/animated/AnimatedList";
+import AnimatedListItem from "@/components/shared/animated/AnimatedListItem";
 import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
 import InfoBox from "@/components/shared/box/InfoBox";
 import Star from "@/components/shared/decor/Star";
@@ -11,12 +13,12 @@ import ReviewList from "./ReviewList";
 const Reviews = () => {
   return (
     <section id={ROUTES.REVIEWS.id} className="scroll-mt-20 py-10">
-      <div className="container flex max-w-[420px] flex-col gap-[10px] xl:h-[510px] xl:max-w-[1280px] xl:flex-row xl:gap-5">
-        <div className="relative">
-          <AnimatedWrapper animation={fadeInAnimation({ x: 50 })}>
+      <div className="container relative flex max-w-[420px] flex-col gap-[10px] xl:h-[510px] xl:max-w-[1280px] xl:flex-row xl:gap-5">
+        <AnimatedList>
+          <AnimatedListItem>
             <InfoBox
               variant="glass-dark"
-              className="relative z-[1] flex gap-4 p-5 xl:gap-8 xl:p-8"
+              className="relative flex gap-4 p-5 xl:gap-8 xl:p-8"
             >
               <div className="relative h-[226px] w-[100px] shrink-0 xl:h-[446px] xl:w-[198px]">
                 <Image
@@ -38,25 +40,30 @@ const Reviews = () => {
               </div>
 
               <Star
-                starClassName="absolute size-[74px] top-[44px] left-[99px] xl:size-[177px] xl:top-[121px] xl:left-[197px]"
+                starClassName="absolute size-[74px] p-[10px] top-[44px] left-[99px] xl:size-[177px] xl:top-[121px] xl:left-[197px] xl:p-6"
                 starVariant="dark"
               />
 
               <Star
-                starClassName="absolute size-[46px] top-5 left-[177px] xl:size-[104px] xl:top-[53px] xl:left-[392px]"
+                starClassName="absolute size-[46px] top-5 p-[6px] left-[177px] xl:size-[104px] xl:top-[53px] xl:left-[392px] xl:p-[15px]"
                 starVariant="dark"
               />
             </InfoBox>
-          </AnimatedWrapper>
+          </AnimatedListItem>
+        </AnimatedList>
 
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: -30, delay: 1 })}
+          className="pointer-events-none absolute -top-[150px] left-[110px] -z-[10] h-[491px] w-[537px] object-cover max-xl:hidden xl:block"
+        >
           <Image
             src="/images/reviews/reviews-decor-desk.svg"
-            alt="Декоративне зображення"
+            alt="..."
             width={537}
             height={491}
-            className="absolute -top-[150px] right-0 -z-[10] object-cover max-xl:hidden xl:block"
+            className="h-full w-full object-cover"
           />
-        </div>
+        </AnimatedWrapper>
 
         <ReviewList />
       </div>

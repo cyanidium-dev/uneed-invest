@@ -94,7 +94,7 @@ const ProfitCalculation = () => {
         viewport={{ once: true, amount: 0 }}
         className="absolute -bottom-[440px] -right-[100px] -z-[1] h-[605px] w-[630px] xl:-right-[70px] xl:-top-[320px]"
       >
-        <div className="h-[605px] w-[630px]">
+        <div className="relative h-[605px] w-[630px]">
           <Image
             src="/images/calculator/calculator-decor.svg"
             alt="Декоративне зображення"
