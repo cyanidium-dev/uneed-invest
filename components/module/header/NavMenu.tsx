@@ -46,7 +46,11 @@ const NavMenu = ({ isOpen, closeMenu }: NavMenuProps) => {
           </ul>
         </nav>
 
-        <BaseButton variant="dark" className="h-[46px] w-[204px] max-xl:hidden">
+        <BaseButton
+          variant="dark"
+          href="#top-cta"
+          className="h-[46px] w-[204px] max-xl:hidden"
+        >
           Зв&apos;язатися з нами
         </BaseButton>
       </div>

@@ -7,7 +7,10 @@ import { fadeInAnimation } from "@/helpers/animation";
 
 const TopCTA = () => {
   return (
-    <section className="bg-accent py-10 text-light xl:py-[112px]">
+    <section
+      id="top-cta"
+      className="scroll-mt-20 bg-accent py-10 text-light xl:py-[112px]"
+    >
       <div className="container relative max-w-[500px] xl:max-w-[1280px]">
         <AnimatedWrapper
           animation={fadeInAnimation({ x: -50 })}
