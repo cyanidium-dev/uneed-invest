@@ -3,12 +3,9 @@
 import Image from "next/image";
 
 import AnimatedWrapper from "@/components/shared/animated/AnimatedWrapper";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { fadeInAnimation } from "@/helpers/animation";
 
 const HeroImages = () => {
-  const isDesktop = useMediaQuery("(min-width: 1280px)");
-
   return (
     <>
       <div className="absolute left-0 top-0 h-full w-full xl:w-1/2">
@@ -70,9 +67,6 @@ const HeroImages = () => {
             alt="Декоративне зображення"
             fill
             sizes="799px"
-            priority={isDesktop}
-            fetchPriority={isDesktop ? "high" : "auto"}
-            loading={isDesktop ? "eager" : "lazy"}
           />
         </AnimatedWrapper>
       </div>
@@ -86,9 +80,9 @@ const HeroImages = () => {
           alt="Декоративне зображення"
           width={183}
           height={381}
-          priority={!isDesktop}
-          fetchPriority={!isDesktop ? "high" : "auto"}
-          loading={!isDesktop ? "eager" : "lazy"}
+          priority
+          fetchPriority="high"
+          loading="eager"
         />
       </AnimatedWrapper>
 
@@ -101,9 +95,6 @@ const HeroImages = () => {
           alt="Декоративне зображення"
           width={378}
           height={356}
-          priority={isDesktop}
-          fetchPriority={isDesktop ? "high" : "auto"}
-          loading={isDesktop ? "eager" : "lazy"}
         />
       </AnimatedWrapper>
     </>
