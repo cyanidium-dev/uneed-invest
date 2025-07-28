@@ -42,8 +42,8 @@ export const siteConfig = {
 
   info: [
     {
-      label: "Оферта",
-      href: "#",
+      label: ROUTES.OFFER.label,
+      href: ROUTES.OFFER.href,
     },
     {
       label: ROUTES.POLICY.label,

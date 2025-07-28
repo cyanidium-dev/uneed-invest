@@ -39,4 +39,9 @@ export const ROUTES = {
     href: "/policy",
     id: "policy",
   },
+  OFFER: {
+    label: "Оферта",
+    href: "/offer",
+    id: "offer",
+  },
 } as const;
