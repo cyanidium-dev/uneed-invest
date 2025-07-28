@@ -1,4 +1,4 @@
-import { TikTokIcon, YoutubeIcon } from "@/components/icons";
+import { YoutubeIcon } from "@/components/icons";
 import BaseButton from "@/components/shared/buttons/BaseButton";
 import { siteConfig } from "@/config/site";
 
@@ -20,7 +20,7 @@ const FooterSocials = () => {
           </BaseButton>
         </li>
 
-        <li>
+        {/* <li>
           <BaseButton
             href={siteConfig.links.tikTok}
             variant="footer-nav"
@@ -28,7 +28,7 @@ const FooterSocials = () => {
           >
             <TikTokIcon />
           </BaseButton>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

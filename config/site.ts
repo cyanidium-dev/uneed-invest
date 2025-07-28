@@ -42,20 +42,12 @@ export const siteConfig = {
 
   info: [
     {
-      label: "Юридичні деталі",
-      href: "#",
-    },
-    {
-      label: "ФОП",
-      href: "#",
-    },
-    {
       label: "Оферта",
       href: "#",
     },
     {
-      label: "Конфіденціальність",
-      href: "#",
+      label: ROUTES.POLICY.label,
+      href: ROUTES.POLICY.href,
     },
   ],
 

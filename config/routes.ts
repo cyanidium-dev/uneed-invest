@@ -34,4 +34,9 @@ export const ROUTES = {
     href: "#faq",
     id: "faq",
   },
+  POLICY: {
+    label: "Конфіденціальність",
+    href: "/policy",
+    id: "policy",
+  },
 } as const;
