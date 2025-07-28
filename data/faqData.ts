@@ -5,34 +5,33 @@ type FaqItem = {
 
 export const faqData: FaqItem[] = [
   {
-    question: "Скільки потрібно інвестувати на старті?",
+    question: "У чому полягає суть інвестицій у подобову оренду житла?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Інвестор купує нерухомість або частку в ній, а спеціалізована компанія займається її здачею в оренду подобово. Ви отримуєте пасивний дохід, не займаючись щоденними питаннями управління.",
   },
   {
-    question: "Який рівень прибутку можна очікувати щомісяця?",
+    question: "Чим інвестиції в подобову оренду кращі за довгострокову?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Подобова оренда, як правило, дає вищу дохідність завдяки гнучкій ціновій політиці та високому попиту, особливо у туристичних і ділових центрах. До того ж, є можливість оперативно реагувати на ринкові зміни.",
   },
   {
-    question: "За скільки часу окупається інвестиція?",
+    question: "Як я отримуватиму дохід?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Ви щомісяця отримуєте частину прибутку з оренди. Усі платежі здійснюються на ваш банківський рахунок або іншим зручним способом.",
   },
   {
-    question: "Який досвід потрібен, щоб запустити апартаменти за франшизою?",
+    question: "Чи можу я продати свою частку/нерухомість у майбутньому?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Так, ви можете вийти з проєкту або продати свою частку іншому інвестору. Ми можемо допомогти з пошуком покупця та юридичним супроводом.",
   },
   {
-    question:
-      "Які обов’язки залишаються на інвесторові, а що бере на себе франшиза?",
+    question: "Де знаходиться нерухомість, у яку можна інвестувати?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Ми працюємо на локаціях з високою зацікавленістю серед людей у подобовій оренді як в туристичних цілях так і для робочих (відрядження тощо). Кожен об’єкт проходить аналіз рентабельності перед пропозицією інвестору.",
   },
   {
-    question: "Що входить у підтримку після запуску?",
+    question: "Як я можу переконатися в надійності компанії?",
     answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quasi reprehenderit natus itaque commodi voluptates repellat blanditiis sunt nisi nulla, doloribus repellendus iusto temporibus, quos nesciunt explicabo id. Deserunt, consequuntur.",
+      "Ми відкриті до спілкування, демонструємо результати роботи, надаємо звіти та укладаємо юридично прозорі договори. Ви також можете поспілкуватися з іншими інвесторами або переглянути кейси реалізованих проєктів.",
   },
 ];

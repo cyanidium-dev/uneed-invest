@@ -15,7 +15,7 @@ const FaqList = () => {
         title:
           "font-manrope font-light text-[12px] leading-[20px] xl:text-[18px]",
         indicator: "data-[open=true]:rotate-180 size-6",
-        content: "pb-[14px] xl:text-[24px] xl:pb-[27px]",
+        content: "pb-[14px] text-[12px] xl:text-[18px] xl:pb-[27px]",
       }}
     >
       {faqData.map(({ answer, question }) => (
