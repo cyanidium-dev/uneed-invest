@@ -61,7 +61,7 @@ const BaseModal = ({
     >
       <div
         className={cn(
-          "relative flex h-[347px] w-[304px] flex-col items-center rounded-xl bg-light md:w-[440px]",
+          "relative flex h-[347px] w-[304px] flex-col items-center rounded-lg bg-light md:w-[440px]",
           modalClassName
         )}
       >
