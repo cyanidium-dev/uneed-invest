@@ -36,7 +36,7 @@ const TriggerPresentationForm = () => {
     data: PresentationFormSchema,
     reset: () => void
   ) => {
-    const fullData = { ...data, messageFrom: APPLICATION.PARTNERSHIP };
+    const fullData = { ...data, messageFrom: APPLICATION.PRESENTATION };
     const success = await sendTelegramMessage(fullData);
 
     setIsError(!success);
@@ -72,6 +72,7 @@ const TriggerPresentationForm = () => {
         dialogRef={responseDialogRef}
         onClose={closeResponseDialog}
         isError={isError}
+        isPresentation
       />
     </div>
   );
